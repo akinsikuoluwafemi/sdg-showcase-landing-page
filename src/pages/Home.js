@@ -1,31 +1,34 @@
-import React, { Component, Fragment } from 'react';
+import React, { useEffect, Fragment, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.scss';
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import Footer from '../components/Footer/Footer';
+import { ModeContext }from '../contexts/ModeContext';
 
-
-
-export default class Home extends Component {
+const Home = () => {
     
-    componentDidMount() {
+  
+
+    useEffect(() => {
         Aos.init({
             duration: 2000
         })
-    }
-    
+    },[])
 
-    render() {
+    let {darkMode} = useContext(ModeContext)
+
+
         return (
             <Fragment>
                 <header className="page-header">
                     <article className="container">
                         <div className="">
-                            <div className="page-header-time my-4">Apr 26-30,2020</div>
-                            <h1 className="page-header-heading m-auto">
-                                <span > <span className="kbd">18,000+</span> INNOVATORS</span> <br/>
-                                <span>FROM <span className="kbd">175</span> COUNTRIES</span> <br/>
-                                <span>CREATED <span className="kbd">1,560</span> PROJECTS TO</span> <br/>
+                            <div className={darkMode ? `page-header-time my-4 dark-mode` : `page-header-time my-4 light-mode`}>Apr 26-30,2020</div>
+                            <h1 className={darkMode ? `page-header-heading m-auto color-dark` : `page-header-heading m-auto`}>
+                                <span > <span className={darkMode ? `kbd kbddark` : `kbd`}>18,000+</span> INNOVATORS</span> <br/>
+                                <span>FROM <span className={darkMode ? `kbd kbddark` : `kbd`}>175</span> COUNTRIES</span> <br/>
+                                <span>CREATED <span className={darkMode ? `kbd kbddark` : `kbd`}>1,560</span> PROJECTS TO</span> <br/>
                                 <span className="last-span">#BUILDFORSDG</span>
                             </h1>
                         </div> 
@@ -96,13 +99,13 @@ export default class Home extends Component {
                     
                     <div className="row project-card-container ">
                         <div data-aos="fade" className=" col project-card rounded py-4 px-4">
-                            <Link style={{ color: '#F81A8C'}} className="project-name">#CELAFAREMO (ITALIAN)</Link>
+                            <Link to="/" style={{ color: '#F81A8C'}} className="project-name">#CELAFAREMO (ITALIAN)</Link>
                             <span className="flag" role="img" aria-label="flag">🇺🇸</span>
                             <p className="mt-3">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
                         </div>
                         
                         <div data-aos="fade" className="col project-card rounded py-4 px-4 mt-5">
-                            <Link style={{ color: '#4D2CFF'}} className="project-name" >#CELAFAREMO (ITALIAN)</Link>
+                            <Link to="/" style={{ color: '#4D2CFF'}} className="project-name" >#CELAFAREMO (ITALIAN)</Link>
                             <span className="flag" role="img" aria-label="flag">🇸🇬</span>
                             <p className="mt-3">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
                         </div>
@@ -110,13 +113,13 @@ export default class Home extends Component {
 
                     <div data-aos="fade" className="row project-card-container ">
                         <div className="col project-card rounded py-4 px-4">
-                            <Link style={{ color: '#F81A8C' }} className="project-name">#CELAFAREMO (ITALIAN)</Link>
+                            <Link to="/" style={{ color: '#F81A8C' }} className="project-name">#CELAFAREMO (ITALIAN)</Link>
                             <span className="flag" role="img" aria-label="flag">🇸🇬</span>
                             <p className="mt-3">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
                         </div>
 
                         <div data-aos="fade" className="col project-card rounded py-4 px-4 mt-5">
-                            <Link style={{ color: '#4D2CFF' }} className="project-name" >#CELAFAREMO (ITALIAN)</Link>
+                            <Link to="/" style={{ color: '#4D2CFF' }} className="project-name" >#CELAFAREMO (ITALIAN)</Link>
                             <span className="flag" role="img" aria-label="flag">🇸🇬</span>
                             <p className="mt-3">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
                         </div>
@@ -124,13 +127,13 @@ export default class Home extends Component {
 
                     <div data-aos="fade" className="row project-card-container ">
                         <div className="col project-card rounded py-4 px-4 ">
-                            <Link style={{ color: '#F81A8C' }} className="project-name">#CELAFAREMO (ITALIAN)</Link>
+                            <Link to="/" style={{ color: '#F81A8C' }} className="project-name">#CELAFAREMO (ITALIAN)</Link>
                             <span className="flag" role="img" aria-label="flag">🇸🇬</span>
                             <p className="mt-3">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
                         </div>
 
                         <div data-aos="fade" className="col project-card rounded py-4 px-4 mt-5">
-                            <Link style={{ color: '#4D2CFF' }} className="project-name" >#CELAFAREMO (ITALIAN)</Link>
+                            <Link to="/" style={{ color: '#4D2CFF' }} className="project-name" >#CELAFAREMO (ITALIAN)</Link>
                             <span className="flag" role="img" aria-label="flag">🇸🇬</span>
                             <p className="mt-3">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a</p>
                         </div>
@@ -148,22 +151,16 @@ export default class Home extends Component {
                     </div>
                 </div>
                
-                
-
-                <footer class="footer">
-                    <p>Made For the world</p>
-                    <p>For the build for sdg challenge</p>
-                    <p>Brilliance is evenly distributed</p>
-
-                </footer>
-                 
+            
+                 <Footer/>
 
 
             </Fragment>
 
             
         )
-    }
 }
 
 
+
+export default Home;

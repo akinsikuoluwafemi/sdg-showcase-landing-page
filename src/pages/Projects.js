@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-export default function Projects() {
-    return (
-        <div>
-            
-        </div>
-    )
+
+class Projects extends Component {
+    
+
+    render(){
+        
+
+        return (
+            <div>
+                <p>Projects page</p>
+            </div>
+        )
+        
+    }
+   
 }
+
+
+export default Projects;

@@ -1,0 +1,29 @@
+
+.footer {
+//   position: fixed;
+    height: 300px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #E0E6ED;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-heading {
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 62px;
+        padding: 1.5rem 0;
+        letter-spacing: 0.02em;
+        line-height: 1.125;
+        color: var(--theme-ui-colors-secondary,#3c4858);
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: -8px;
+    }
+  
+}
