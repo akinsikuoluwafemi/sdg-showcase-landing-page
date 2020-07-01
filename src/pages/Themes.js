@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Themes extends Component {
-    render() {
-        return (
-            <div>
-              Themes page  
-            </div>
-        )
-    }
+export default function Themes({match}) {
+    return (
+        <div>
+            Themes of theme
+            {/* {match.params.name} */}
+        </div>
+    )
 }

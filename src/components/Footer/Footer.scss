@@ -1,4 +1,6 @@
-
+.foot {
+    background: #E0E6ED!important;
+}
 .footer {
 //   position: fixed;
     height: 300px;
@@ -15,15 +17,17 @@
 
   &-heading {
         font-family: inherit;
-        font-weight: 700;
-        font-size: 62px;
+        // font-weight: 700;
+        // font-size: 62px;
         padding: 1.5rem 0;
         letter-spacing: 0.02em;
         line-height: 1.125;
         color: var(--theme-ui-colors-secondary,#3c4858);
-        font-size: 24px;
+        font-size: 27px;
         margin-top: 0;
         margin-bottom: -8px;
+    font-family: 'Caveat', cursive;
+
     }
   
 }

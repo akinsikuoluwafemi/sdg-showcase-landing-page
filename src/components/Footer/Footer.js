@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Footer.scss';
-
+import { ModeContext } from '../../contexts/ModeContext';
 
 export default function Footer() {
+    
+    let { darkMode } = useContext(ModeContext);
+
     return (
-        <footer data-aos="fade" className="footer">
-            <div data-aos="fade">
-                <h2 className="footer-heading">Africans can build amazing products</h2>
-                <p className="footer-heading">For the build for sdg challenge</p>
-                <p className="footer-heading">Brilliance is evenly distributed</p>
-            </div>
-        </footer>
+        <div >
+            <footer className={darkMode ? `footer dark-mode` : `footer light-mode foot`}>
+                <div >
+                    <p className={darkMode ? `color-light` : `color-dark`}>This website was built by a Programme Assistant in the <span style={{ color: '#0fddff' }}>#BUILDFORSDG.</span></p>
+                    <h2 className={darkMode ? `color-light footer-heading` : `color-dark footer-heading`}>Africans can build amazing products.</h2>
+                    <p className={darkMode ? `color-light footer-heading` : `color-dark footer-heading`}>We just need an opportunity.</p>
+                </div>
+            </footer>
+        </div>
+        
     )
 }
