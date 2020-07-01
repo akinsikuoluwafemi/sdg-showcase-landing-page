@@ -7,7 +7,6 @@ import Error from './pages/Error';
 import Projects from './pages/Projects';
 import Judges from './pages/Judges';
 import { ModeContext } from './contexts/ModeContext';
-// import Footer from './components/Footer/Footer';
 import Nopoverty from './pages/NoPorverty';
 import ZeroHunger from './pages/ZeroHunger';
 import GoodHealthAndWellbeing from './pages/GoodHealthAndWellbeing';
@@ -18,7 +17,6 @@ import GenderEquality from './pages/GenderEquality';
  function App() {
   
   const [darkMode, setDarkMode] = useState(false);
-  //  console.log(darkMode);
    return (
     
     <>
@@ -27,7 +25,6 @@ import GenderEquality from './pages/GenderEquality';
          <Switch>
            <Route exact path="/" component={Home} />
            <Route exact path="/themes" component={Themes} />
-           {/* <Route exact path="/themes/:name" /> */}
            <Route exact path="/themes/no-poverty" component={Nopoverty} />
            <Route exact path="/themes/zero-hunger" component={ZeroHunger} />
            <Route exact path="/themes/good-health-and-wellbeing" component={GoodHealthAndWellbeing} />
@@ -39,12 +36,10 @@ import GenderEquality from './pages/GenderEquality';
            
            <Route exact path="/judges" component={Judges} />
            <Route exact path="/projects" component={Projects} />
-           {/* <Route exact path="/projects/:id" component={SingleProjects} /> */}
 
            <Route component={Error} />
          </Switch>
 
-         {/* <Footer/> */}
       </ModeContext.Provider>
       
 

@@ -1,18 +1,13 @@
 body {
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif; */
+ 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /*  */
     font-family: "Klima Web", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
     line-height: 1.5;
     font-weight: 400;
     color: #1f2d3d;
-    /* min-height: 100vh; */
     margin: 0px;
     padding: 0px;
-  /*  */
 }
 
 code {

@@ -238,23 +238,10 @@ const Home = () => {
     }
 
     
-        // style={{background: '#777'}}
 
         return (
             <div >
-                {/* <header className="page-header">
-                    <article className="container py-4">
-                        <div className="">
-                            <div className={darkMode ? `page-header-time my-4 dark-mode` : `page-header-time my-4 light-mode`}>Apr 26-30,2020</div>
-                            <h1 className={darkMode ? `page-header-heading m-auto color-dark` : `page-header-heading m-auto`}>
-                                <span > <span className={darkMode ? `kbd kbddark` : `kbd`}>18,000+</span> INNOVATORS</span> <br/>
-                                <span>FROM <span className={darkMode ? `kbd kbddark` : `kbd`}>175</span> COUNTRIES</span> <br/>
-                                <span>CREATED <span className={darkMode ? `kbd kbddark` : `kbd`}>1,560</span> PROJECTS TO</span> <br/>
-                                <span className="last-span">#BUILDFORSDG</span>
-                            </h1>
-                        </div> 
-                    </article>
-                </header> */}
+               
                 <div className="bg-header">
                     <div className="container page-head">
                         <div className="page-container">
@@ -366,7 +353,6 @@ const Home = () => {
                     <ProjectDetail project={selectedProject} />
 
 
-                        {/* <div className="modal-show">Modal</div> */}
 
                         <ProjectList projects={projects} onProjectSelect={onProjectSelect} />
 
