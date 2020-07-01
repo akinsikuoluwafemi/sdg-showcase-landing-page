@@ -250,8 +250,8 @@ const Home = () => {
                                     <span> <img className="andela" src={andela} alt="andela"/> </span> <span>FACEBOOK</span>
                                 </div>
                                 <span className="page-content">
-                                    <p>#BUILDF<span><img className="sdg-small" src={sdg} alt="sdg" />R</span> <span>SDG</span></p>
-                                    <p className="challenge animate__animated animate__pulse">CHALLENGE <span className="year">2020</span></p>
+                                    <p >#BUILDF<span><img className="sdg-small" src={sdg} alt="sdg" />R</span> <span >SDG</span></p>
+                                    <p className="challenge animate__animated animate__pulse fancy">CHALLENGE <span className="year">2020</span></p>
                                 </span>
                                 
                             </div>
