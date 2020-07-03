@@ -15,7 +15,7 @@ export default function ProjectList({ projects, onProjectSelect }) {
 
 
     return (
-        <div className="row project-card-container">
+        <div className=" project-card-container">
             {renderedList}
         </div>
     )

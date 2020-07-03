@@ -1,6 +1,7 @@
 import React, { useEffect, useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.scss';
+
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import Footer from '../components/Footer/Footer';
@@ -9,6 +10,7 @@ import ProjectList from '../components/ProjectList/ProjectList';
 import ProjectDetail from '../components/ProjectDetail/ProjectDetail';
 import sdg from '../images/sdg.png';
 import andela from '../images/andela.png';
+
 
 const Home = () => {
     
@@ -25,12 +27,12 @@ const Home = () => {
     let [ projects ] = useState([
         {
             name: '#sefan celafaremo(ITALIAN)',
-            text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
+            text: 'lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
             color: '#4D2CFF',
             theme: 'No Poverty',
             about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
             members: {
-                memberone: ['Thomas fashola', 'thomas@email.com'],
+                one: ['Thomas fashola', 'thomas@email.com'],
                 two: ['Thomas fashola', 'thomas@email.com'],
                 three: ['Thomas fashola', 'thomas@email.com'],
                 four: ['Thomas fashola', 'thomas@email.com'],
@@ -39,7 +41,7 @@ const Home = () => {
                 seven: ['Thomas fashola', 'thomas@email.com'],
                 eight: ['Thomas fashola', 'thomas@email.com']
             },  
-            videoLink: 'https://www.youtube.com',
+            videoLink: 'https://www.youtube.com/embed/qAxDk5oljc8',
             inspiration: 'lorem lorem lorem loem lorem orem  lorem lorem loem lorem orem',
             whatitdoes: 'lorem lorem loem lorem orem ',
             stackused: ['Next.js', 'React', 'Tailwind.css'],
@@ -57,7 +59,7 @@ const Home = () => {
             theme: 'No Poverty',
             about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
             members: {
-                memberone: ['Thomas fashola', 'thomas@email.com'],
+                one: ['Thomas fashola', 'thomas@email.com'],
                 two: ['Thomas fashola', 'thomas@email.com'],
                 three: ['Thomas fashola', 'thomas@email.com'],
                 four: ['Thomas fashola', 'thomas@email.com'],
@@ -107,7 +109,7 @@ const Home = () => {
             theme: 'No Poverty',
             about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
             members: {
-                memberone: ['Thomas fashola', 'thomas@email.com'],
+                one: ['Thomas fashola', 'thomas@email.com'],
                 two: ['Thomas fashola', 'thomas@email.com'],
                 three: ['Thomas fashola', 'thomas@email.com'],
                 four: ['Thomas fashola', 'thomas@email.com'],
@@ -132,7 +134,7 @@ const Home = () => {
             theme: 'No Poverty',
             about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
             members: {
-                memberone: ['Thomas fashola', 'thomas@email.com'],
+                one: ['Thomas fashola', 'thomas@email.com'],
                 two: ['Thomas fashola', 'thomas@email.com'],
                 three: ['Thomas fashola', 'thomas@email.com'],
                 four: ['Thomas fashola', 'thomas@email.com'],
@@ -157,7 +159,7 @@ const Home = () => {
             theme: 'No Poverty',
             about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
             members: {
-                memberone: ['Thomas fashola', 'thomas@email.com'],
+                one: ['Thomas fashola', 'thomas@email.com'],
                 two: ['Thomas fashola', 'thomas@email.com'],
                 three: ['Thomas fashola', 'thomas@email.com'],
                 four: ['Thomas fashola', 'thomas@email.com'],
@@ -182,7 +184,7 @@ const Home = () => {
             theme: 'No Poverty',
             about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
             members: {
-                memberone: ['Thomas fashola', 'thomas@email.com'],
+                one: ['Thomas fashola', 'thomas@email.com'],
                 two: ['Thomas fashola', 'thomas@email.com'],
                 three: ['Thomas fashola', 'thomas@email.com'],
                 four: ['Thomas fashola', 'thomas@email.com'],
@@ -191,7 +193,7 @@ const Home = () => {
                 seven: ['Thomas fashola', 'thomas@email.com'],
                 eight: ['Thomas fashola', 'thomas@email.com']
             },  
-            videoLink: 'https://www.youtube.com',
+            videoLink: 'https://youtu.be/qAxDk5oljc8',
             inspiration: 'lorem lorem lorem loem lorem orem  lorem lorem loem lorem orem',
             whatitdoes: 'lorem lorem loem lorem orem ',
             stackused: ['Next.js', 'React', 'Tailwind.css'],
@@ -207,7 +209,7 @@ const Home = () => {
             theme: 'No Poverty',
             about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
             members: {
-                memberone: ['Thomas fashola', 'thomas@email.com'],
+                one: ['Thomas fashola', 'thomas@email.com'],
                 two: ['Thomas fashola', 'thomas@email.com'],
                 three: ['Thomas fashola', 'thomas@email.com'],
                 four: ['Thomas fashola', 'thomas@email.com'],
@@ -227,6 +229,7 @@ const Home = () => {
         }
         
     ])
+    console.log(projects);
 
     let [selectedProject, setSelectedProject] = useState(null);
 
@@ -240,23 +243,18 @@ const Home = () => {
     
 
         return (
-            <div >
+            <div  >
                
                 <div className="bg-header">
-                    <div className="container page-head">
-                        <div className="page-container">
-                            <div className="">
-                                <div className="sponsors">
-                                    <span> <img className="andela" src={andela} alt="andela"/> </span> <span>FACEBOOK</span>
-                                </div>
-                                <span className="page-content">
-                                    <p >#BUILDF<span><img className="sdg-small" src={sdg} alt="sdg" />R</span> <span >SDG</span></p>
-                                    <p className="challenge animate__animated animate__pulse fancy">CHALLENGE <span className="year">2020</span></p>
-                                </span>
-                                
-                            </div>
-                                
+                    <div className="page-head">
+                        <div className="sponsors">
+                            <span style={{ textAlign: 'center' }}> <img className="andela" src={andela} alt="andela" /> </span> <span className="facebook">FACEBOOK</span>
+                            
                         </div>
+                            
+                        <p className="build-container">#BUILDF<span><img className="sdg-small" src={sdg} alt="sdg" />R</span> <span >SDG</span></p>
+                        <p className="challenge animate__animated animate__pulse">CHALLENGE <span className="year">2020</span></p>   
+                                
                     </div>
 
 
@@ -286,11 +284,11 @@ const Home = () => {
                 <div className={darkMode ? `dark-mode` : `light-mode `}>
                     <div className="container ">
                         <div className="row">
-                            <h2 className="top-projects my-5">Top 60 Projects</h2>
+                            <h2 className="top-projects  my-5">Top 60 Projects</h2>
                         </div>
-                        <div className="row">
-                            <div className="col-12 col-lg-9">
-                                <p className={darkMode ? `color-light intro-container` : `color-dark intro-container`}>With over 175 team projects in the works, the Innovators of the #BuildforSDG Program are building solutions ranging from Food Bank regulators to simulated concepts for SMART city building as well as improved revenue collection tech models for communities and standardized waste collection solutions.</p>
+                        <div  className="row">
+                            <div className="col-12 col-lg-9 ">
+                                <p className={darkMode ? `color-light intro-container ` : `color-dark intro-container`}>With over 175 team projects in the works, the Innovators of the #BuildforSDG Program are building solutions ranging from Food Bank regulators to simulated concepts for SMART city building as well as improved revenue collection tech models for communities and standardized waste collection solutions.</p>
                                 <p className={darkMode ? `color-light intro-container` : `color-dark intro-container`}>These innovators while working in teams are building tech solutions that could make life a lot easier for communities across Sub-Saharan Africa battling the Covid-19 Pandemic. Over 160 teams from #BuildforSDG Challenge are leveraging on Open Source Technologies-- Top-picks and go to choices for these Innovators amongst these Open Source technologies include React, React Native, Jest, Flow, Facebook Authentication, and Graph QL.</p>
 
                             </div>
@@ -307,43 +305,39 @@ const Home = () => {
                         </div>
 
 
-                        <div className="row theme-container ">
-                            <Link to="/themes/no-poverty" style={{ background: '#E5243B' }} className=" card  col health  ">
+                        <div className="themes-container">
+                            <Link to="/themes/no-poverty" style={{ background: '#E5243B' }} className=" card  health  ">
                                 <div className=" text-white font-weight-bold">NO POVERTY</div>
                             </Link>
-                            <Link to="/themes/zero-hunger" style={{ background: '#DDA639' }} className="card col health">
+                            <Link to="/themes/zero-hunger" style={{ background: '#DDA639' }} className="card health">
                                 <div className=" text-white font-weight-bold">ZERO HUNGER</div>
                             </Link>
-                            <Link to="/themes/good-health-and-wellbeing" style={{ background: '#4C9F38' }} className="card col health">
+                            <Link to="/themes/good-health-and-wellbeing" style={{ background: '#4C9F38' }} className="card health">
                                 <div className=" text-white font-weight-bold">GOOD Health And Wellbeing</div>
                             </Link>
 
-                        </div>
-                        <div className="row theme-container font-weight-bold">
-                            <Link to="/themes/quality-education" style={{ background: '#C5192D' }} className=" card  col health  ">
+                            <Link to="/themes/quality-education" style={{ background: '#C5192D' }} className=" card health  ">
                                 <div className=" text-white font-weight-bold">Quality Education</div>
                             </Link>
-                            <Link to="/themes/peace-and-justice" style={{ background: '#10689D' }} className="card col health">
+                            <Link to="/themes/peace-and-justice" style={{ background: '#10689D' }} className="card health">
                                 <div className=" text-white font-weight-bold">Peace And Justice.</div>
                             </Link>
-                            <Link to="/themes/decent-work" style={{ background: '#A21942' }} className="card col health">
+                            <Link to="/themes/decent-work" style={{ background: '#A21942' }} className="card health">
                                 <div className=" text-white font-weight-bold">Decent Work.</div>
                             </Link>
 
-                        </div>
-
-                        <div className="row theme-container">
-                            <Link to="/themes/industry-innovation" style={{ background: '#FA6926' }} className=" card  col health  ">
+                            <Link to="/themes/industry-innovation" style={{ background: '#FA6926' }} className=" card  health  ">
                                 <div className=" text-white font-weight-bold">Industry innovation</div>
                             </Link>
-                            <Link to="/themes/sustainable-cities" style={{ background: '#FB9D24' }} className="card col health">
+                            <Link to="/themes/sustainable-cities" style={{ background: '#FB9D24' }} className="card  health">
                                 <div className=" text-white font-weight-bold">Sustainable Cities.</div>
                             </Link>
-                            <Link to="/themes/patnership-for-goals" style={{ background: '#19486A' }} className="card col health">
+                            <Link to="/themes/patnership-for-goals" style={{ background: '#19486A' }} className="card health">
                                 <div className=" text-white font-weight-bold">Patnerships For Goals.</div>
                             </Link>
 
                         </div>
+                 
                     </div>
                 </div>
 
@@ -369,6 +363,8 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
+               
                 
                
                 <Footer />

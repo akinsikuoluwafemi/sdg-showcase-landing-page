@@ -11,7 +11,7 @@ export default function ProjectItem({ project , onProjectSelect}) {
 
     return (
         
-            <div className="col project-card rounded py-4 px-4" data-aos="fade">
+            <div className=" project-card rounded py-3 px-3" data-aos="fade">
 
 
                 <Link onClick={displayModal} to="/" style={{ color: project.color }} className="project-name">{project.name}</Link>
