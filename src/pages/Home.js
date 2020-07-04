@@ -76,6 +76,7 @@ const Home = () => {
             proudof: 'lorem lorem loem lorem orem ',
             hostedlink: 'www.facebook.com',
             image: 'https.jpg'
+
         },
         {
             name: '#sefan celafaremo(ITALIAN)',
@@ -101,6 +102,7 @@ const Home = () => {
             proudof: 'lorem lorem loem lorem orem ',
             hostedlink: 'www.facebook.com',
             image: 'https.jpg'
+
         },
         {
             name: '#sefan celafaremo(ITALIAN)',
@@ -126,6 +128,7 @@ const Home = () => {
             proudof: 'lorem lorem loem lorem orem ',
             hostedlink: 'www.facebook.com',
             image: 'https.jpg'
+
         },
         {
             name: '#sefan celafaremo(ITALIAN)',
@@ -151,6 +154,7 @@ const Home = () => {
             proudof: 'lorem lorem loem lorem orem ',
             hostedlink: 'www.facebook.com',
             image: 'https.jpg'
+
         },
         {
             name: '#sefan celafaremo(ITALIAN)',
@@ -176,6 +180,7 @@ const Home = () => {
             proudof: 'lorem lorem loem lorem orem ',
             hostedlink: 'www.facebook.com',
             image: 'https.jpg'
+
         },
         {
             name: '#sefan celafaremo(ITALIAN)',
@@ -201,6 +206,7 @@ const Home = () => {
             proudof: 'lorem lorem loem lorem orem ',
             hostedlink: 'www.facebook.com',
             image: 'https.jpg'
+
         },
         {
             name: '#sefan celafaremo(ITALIAN)',
@@ -226,6 +232,7 @@ const Home = () => {
             proudof: 'lorem lorem loem lorem orem ',
             hostedlink: 'www.facebook.com',
             image: 'https.jpg'
+
         }
         
     ])
@@ -237,7 +244,6 @@ const Home = () => {
 
     const onProjectSelect = (project) => {
         setSelectedProject(project)
-        console.log(selectedProject);
     }
 
     

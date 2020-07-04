@@ -1,29 +1,33 @@
-import React from 'react';
+import React, {useContext, useState} from 'react';
 import '../../App.scss';
 
-export default function ProjectDetail({project}) {
+
+export default function ProjectDetail({project, showModal}) {
     
-   
 
     if (!project) {
+
         return <div style={{display:'none'}}>Loading...</div>
     } 
-        return (
-                <div className=" modal">
-                <div className="shadow-lg  modal-content">
-                    <h1>{project.name}</h1>
 
+    console.log(showModal + 'from detail page')
+
+    return (
+            <div  className="modal">
+                <div className ="shadow-lg  modal-content">
+                <h1>{project.name}</h1>
+                    <span onClick={() => console.log('closed')} class="close">&times;</span>
                     <div className="container">
                         <div className="row">
                             <div className="col">
-                                <p style={{fontSize: '2rem'}}>{project.text}</p>
+                                <p style={{ fontSize: '2rem' }}>{project.text}</p>
 
                             </div>
                         </div>
                         <div className="row">
-                            <div  className="vid">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe  class="embed-responsive-item" src={project.videoLink} allowfullscreen autoplay title="content"></iframe>
+                            <div className="vid">
+                                <div className="embed-responsive embed-responsive-16by9">
+                                    <iframe className="embed-responsive-item" src={project.videoLink} allowFullscreen autoPlay title="content"></iframe>
                                 </div>
                             </div>
 
@@ -32,8 +36,9 @@ export default function ProjectDetail({project}) {
 
 
 
-                    </div>
                 </div>
+            </div>
+                
                 
             
 
