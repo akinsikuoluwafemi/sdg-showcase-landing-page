@@ -6,6 +6,7 @@ import Aos from 'aos';
 import "aos/dist/aos.css";
 import Footer from '../components/Footer/Footer';
 import { ModeContext } from '../contexts/ModeContext';
+import { ModalContext } from '../contexts/ModalContext';
 import ProjectList from '../components/ProjectList/ProjectList';
 import ProjectDetail from '../components/ProjectDetail/ProjectDetail';
 import sdg from '../images/sdg.png';
@@ -26,7 +27,8 @@ const Home = () => {
 
     let [ projects ] = useState([
         {
-            name: '#sefan celafaremo(ITALIAN)',
+            id: 1,
+            name: 'Safe Haven',
             text: 'lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
             color: '#4D2CFF',
             theme: 'No Poverty',
@@ -53,6 +55,7 @@ const Home = () => {
 
         },
         {
+            id: 2,
             name: '#sefan celafaremo(ITALIAN)',
             text: 'second projects lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
             color: '#4D2CFF',
@@ -79,6 +82,7 @@ const Home = () => {
 
         },
         {
+            id: 3,
             name: '#sefan celafaremo(ITALIAN)',
             text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
             color: '#4D2CFF',
@@ -105,6 +109,7 @@ const Home = () => {
 
         },
         {
+            id: 4,
             name: '#sefan celafaremo(ITALIAN)',
             text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
             color: '#4D2CFF',
@@ -131,6 +136,7 @@ const Home = () => {
 
         },
         {
+            id: 5,
             name: '#sefan celafaremo(ITALIAN)',
             text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
             color: '#4D2CFF',
@@ -157,6 +163,7 @@ const Home = () => {
 
         },
         {
+            id: 6,
             name: '#sefan celafaremo(ITALIAN)',
             text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
             color: '#4D2CFF',
@@ -183,6 +190,7 @@ const Home = () => {
 
         },
         {
+            id: 7,
             name: '#sefan celafaremo(ITALIAN)',
             text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
             color: '#4D2CFF',
@@ -209,6 +217,7 @@ const Home = () => {
 
         },
         {
+            id: 8,
             name: '#sefan celafaremo(ITALIAN)',
             text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
             color: '#4D2CFF',
@@ -240,16 +249,20 @@ const Home = () => {
 
     let [selectedProject, setSelectedProject] = useState(null);
 
+    const [showModal, setShowModal] = useState(false)
+
 
 
     const onProjectSelect = (project) => {
-        setSelectedProject(project)
+        setSelectedProject(project);
     }
 
     
 
-        return (
-            <div  >
+    return (
+        <ModalContext.Provider value={{ showModal, setShowModal }}>
+            
+            <div >
                
                 <div className="bg-header">
                     <div className="page-head">
@@ -350,7 +363,9 @@ const Home = () => {
                 <div className={darkMode ? `dark-mode` : `light-mode`}>
                     <div className="container py-5">
                    
-                    <ProjectDetail project={selectedProject} />
+                        
+                        <ProjectDetail project={selectedProject} />
+
 
 
 
@@ -379,6 +394,8 @@ const Home = () => {
 
 
             </div>
+        </ModalContext.Provider>  
+
 
             
         )

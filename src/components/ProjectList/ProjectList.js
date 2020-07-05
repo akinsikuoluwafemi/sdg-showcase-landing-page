@@ -12,7 +12,7 @@ export default function ProjectList({ projects, onProjectSelect}) {
         
         return (
             
-            <ProjectItem  project={project} key={index} onProjectSelect={onProjectSelect} />
+            <ProjectItem  project={project} key={project.id} onProjectSelect={onProjectSelect} />
                                           
         )
         

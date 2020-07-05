@@ -47,9 +47,6 @@ import GenderEquality from './pages/GenderEquality';
            <Route exact path="/themes/good-health-and-wellbeing" component={GoodHealthAndWellbeing} />
            <Route exact path="/themes/quality-education" component={QualityEducation} />
            <Route exact path="/themes/gender-equality" component={GenderEquality} />
-
-
-
            
            <Route exact path="/judges" component={Judges} />
            <Route exact path="/projects" component={Projects} />
