@@ -651,3 +651,181 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+
+// new modal start
+.ReactModal__Overlay--after-open {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.625) !important;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+.ReactModal__Content {
+    background-color: #ffffff !important;
+    width: 100% !important;
+    max-width: 1024px !important;
+    overflow: auto !important;
+    padding: 0 !important;
+    border: 0 !important;
+    max-height: calc(100vh - 32px) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.0625), 0 8px 12px rgba(0, 0, 0, 0.125);
+    margin-top: 32px !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    will-change: transform;
+    transform-origin: bottom center !important;
+    animation: modal-narrow ease-in 0.5s !important;
+}
+
+.modal-head {
+    box-sizing: border-box;
+    min-width: 0px;
+    background-color: rgb(77, 45, 255);
+    color: #ffffff;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+    margin: 0px;
+    padding: 3.2rem 4.4rem;
+
+}
+
+.aside-icons {
+    box-sizing: border-box;
+    min-width: 0px;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin: -16px -16px 0px;
+
+}
+
+
+.aside-button {
+    box-sizing: border-box;
+    min-width: 0px;
+    -webkit-appearance: none;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: inherit;
+    background-color: transparent;
+    margin: 0px;
+    padding: 4px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 4px;
+}
+
+.new {
+    text-underline-position: under;
+    box-sizing: border-box;
+    min-width: 0px;
+    -webkit-appearance: none;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: inherit;
+    background-color: transparent;
+    text-decoration: underline;
+    margin: 0px;
+    padding: 4px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 4px;
+}
+
+    
+
+.header-sticky {
+    box-sizing: border-box;
+    min-width: 0px;
+    color: #ff0f65;
+    text-underline-position: under;
+    padding-right: 32px;
+    margin: 0px;
+    text-decoration: underline;
+}
+
+
+
+.header-project-name {
+    box-sizing: border-box;
+    min-width: 0px;
+    font-family: "Folsom Web", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 700;
+    line-height: 1.125;
+    letter-spacing: 0.02em;
+    font-size: 3.2rem;
+    color: #ffffff;
+    display: inline;
+    margin: 0px 16px 0px 0px;
+}
+
+.sticky-goal-name {
+
+
+    box-sizing: border-box;
+    min-width: 0px;
+    font-weight: 700;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: "Folsom Web", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, sans-serif;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background-color: #f9fafc;
+    color: rgb(77, 45, 255);
+    vertical-align: bottom;
+    margin: 8px 0px 0px;
+    border-radius: 99999px;
+
+
+}
+
+
+
+// new modal end

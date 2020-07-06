@@ -4,6 +4,81 @@ import { ModalContext } from '../../contexts/ModalContext';
 
 
 
+// export default function ProjectDetail({project}) {
+
+
+//     let { showModal, setShowModal } = useContext(ModalContext);
+//     console.log(showModal +'from detail');
+
+//     if (!project) {
+
+//         return (
+//                 <div style={{ display: 'none' }}>Loading...</div>
+
+//         ) 
+//     } 
+
+
+//     return (
+
+//             <div className={showModal ? `modal` : `hide-modal`}>
+//             <div className="shadow-lg  modal-content">
+
+//                     <div className="grid-container">
+//                         <div className='project-header'>
+//                             <h1 className="project-name">{project.name}</h1>
+//                             <span className="goal-name">No Poverty</span>
+                            
+                            
+//                             <div className="icons">
+//                                     <span onClick={() => setShowModal(false)} className="close">&times;</span>
+
+//                             <a href={project.videoLink} target="_"> <i className="fas fa-external-link-alt fa-2x"></i>  </a>
+//                             </div>
+//                             <div className="project-about">
+//                                 <p >{project.text} lorem lorem lorem</p>
+//                             <p className="group-members"><a href="google.com">{project.members.one[0]}</a>, <a href="google.com">{project.members.two[0]}</a>, <a href="google.com">{project.members.three[0]}</a>, <a href="google.com">{project.members.four[0]}</a>, <a href="google.com">{project.members.five[0]}</a> </p>
+//                             </div>
+                            
+//                             <p className="project-image">iMAGE</p>
+//                             {/* <a href="#"> </span></a> */}
+//                     </div>
+
+//                     <div className="">
+//                         <div className="">
+//                             <div className="">
+//                                 {/* <p style={{ fontSize: '2rem' }}>{project.text}</p> */}
+//                             </div>
+                    
+                
+//                     </div>
+                    
+//                     <div className="vid">
+//                         <div className="embed-responsive embed-responsive-16by9">
+//                             <iframe className="embed-responsive-item" src={project.videoLink} allowFullscreen title="youtube video player"></iframe>
+//                         </div>
+//                     </div>
+
+                    
+                    
+//                         </div>
+
+
+//                 </div>
+//                     </div>
+//                 </div>
+                    
+                    
+            
+
+//         )
+    
+    
+    
+// }
+
+
+
 export default function ProjectDetail({project}) {
 
 
@@ -21,8 +96,29 @@ export default function ProjectDetail({project}) {
 
     return (
 
-            <div className={showModal ? `modal` : `hide-modal`}>
-            <div className="shadow-lg  modal-content">
+        <div className={showModal ? `ReactModal__Overlay--after-open ReactModal__Overlay` : `hide-modal`}>
+            <div className="shadow-lg ReactModal__Overlay--after-open ReactModal__Content">
+
+                
+                <header className="modal-head">
+                    <aside className="aside-icons">
+                        <span onClick={() => setShowModal(false)} className="aside-button">&times;</span>
+
+                        <a className="new" href={project.videoLink} target="_"> <i className="fas fa-external-link-alt fa-2x"></i>  </a>
+                    </aside>
+
+
+                    <a target="_blank" href="https://www.celafaremo2020.it/" class="header-sticky"><h1 class="header-project-name">#CeLaFaremo (Italian)</h1><div class="sticky-goal-name">Entertainment</div></a>
+
+
+
+
+                </header>
+
+
+
+
+
 
                     <div className="grid-container">
                         <div className='project-header'>
@@ -30,25 +126,19 @@ export default function ProjectDetail({project}) {
                             <span className="goal-name">No Poverty</span>
                             
                             
-                            <div className="icons">
-                                    <span onClick={() => setShowModal(false)} className="close">&times;</span>
-
-                            <a href={project.videoLink} target="_"> <i className="fas fa-external-link-alt fa-2x"></i>  </a>
-                            </div>
+          
                             <div className="project-about">
                                 <p >{project.text} lorem lorem lorem</p>
                             <p className="group-members"><a href="google.com">{project.members.one[0]}</a>, <a href="google.com">{project.members.two[0]}</a>, <a href="google.com">{project.members.three[0]}</a>, <a href="google.com">{project.members.four[0]}</a>, <a href="google.com">{project.members.five[0]}</a> </p>
                             </div>
                             
                             <p className="project-image">iMAGE</p>
-                            {/* <a href="#"> </span></a> */}
                     </div>
 
                     <div className="">
                         <div className="">
                             <div className="">
-                                {/* <p style={{ fontSize: '2rem' }}>{project.text}</p> */}
-                            </div>
+                             </div>
                     
                 
                     </div>
@@ -64,7 +154,7 @@ export default function ProjectDetail({project}) {
                         </div>
 
 
-                </div>
+                </div> 
                     </div>
                 </div>
                     
