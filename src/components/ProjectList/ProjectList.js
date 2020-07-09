@@ -5,9 +5,6 @@ import ProjectItem from '../ProjectItem/ProjectItem';
 
 
 export default function ProjectList({ projects, onProjectSelect}) {
-
-
-
     const renderedList =  projects.map((project,index) => {
         
         return (
@@ -17,7 +14,7 @@ export default function ProjectList({ projects, onProjectSelect}) {
         )
         
     })
-
+   
 
     return (
         <div className=" project-card-container">

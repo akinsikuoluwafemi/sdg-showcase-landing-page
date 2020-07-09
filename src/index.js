@@ -4,13 +4,17 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ProjectProvider } from './contexts/context';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <App />
+    <ProjectProvider>
+      <Router>
+        <App />
 
-    </Router>
+      </Router>
+    </ProjectProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

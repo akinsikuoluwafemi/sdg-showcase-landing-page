@@ -7,11 +7,12 @@ import Error from './pages/Error';
 import Projects from './pages/Projects';
 import Judges from './pages/Judges';
 import { ModeContext } from './contexts/ModeContext';
-import Nopoverty from './pages/NoPorverty';
-import ZeroHunger from './pages/ZeroHunger';
-import GoodHealthAndWellbeing from './pages/GoodHealthAndWellbeing';
-import QualityEducation from './pages/QualityEducation';
-import GenderEquality from './pages/GenderEquality';
+import SingleTheme from './pages/SingleTheme';
+// import Nopoverty from './pages/NoPorverty';
+// import ZeroHunger from './pages/ZeroHunger';
+// import GoodHealthAndWellbeing from './pages/GoodHealthAndWellbeing';
+// import QualityEducation from './pages/QualityEducation';
+// import GenderEquality from './pages/GenderEquality';
 
 
  function App() {
@@ -30,8 +31,6 @@ import GenderEquality from './pages/GenderEquality';
      return savedMode || false;
    }
    
-   ;
-   
    
 
    return (
@@ -42,11 +41,14 @@ import GenderEquality from './pages/GenderEquality';
          <Switch>
            <Route exact path="/" component={Home} />
            <Route exact path="/themes" component={Themes} />
-           <Route exact path="/themes/no-poverty" component={Nopoverty} />
+           <Route exact path="/themes/:theme" component={SingleTheme} />
+
+           {/* <Route exact path="/themes/no-poverty" component={Nopoverty} />
            <Route exact path="/themes/zero-hunger" component={ZeroHunger} />
            <Route exact path="/themes/good-health-and-wellbeing" component={GoodHealthAndWellbeing} />
            <Route exact path="/themes/quality-education" component={QualityEducation} />
            <Route exact path="/themes/gender-equality" component={GenderEquality} />
+            */}
            
            <Route exact path="/judges" component={Judges} />
            <Route exact path="/projects" component={Projects} />

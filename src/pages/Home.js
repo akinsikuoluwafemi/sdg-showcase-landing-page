@@ -7,254 +7,34 @@ import "aos/dist/aos.css";
 import Footer from '../components/Footer/Footer';
 import { ModeContext } from '../contexts/ModeContext';
 import { ModalContext } from '../contexts/ModalContext';
+import { ProjectContext } from '../contexts/context';
+
 import ProjectList from '../components/ProjectList/ProjectList';
 import ProjectDetail from '../components/ProjectDetail/ProjectDetail';
 import sdg from '../images/sdg.png';
 import andela from '../images/andela.png';
+import ThemeContainer from '../components/ThemeContainer';
 
 
 const Home = () => {
     
-  
-
     useEffect(() => {
         Aos.init({
             duration: 2000
         })
     },[])
 
-    let {darkMode} = useContext(ModeContext)
-
-    let [ projects ] = useState([
-        {
-            id: 1,
-            name: 'Safe Haven',
-            text: 'lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
-            color: '#4D2CFF',
-            theme: 'No Poverty',
-            about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
-            members: {
-                one: ['Thomas fashola', 'thomas@email.com'],
-                two: ['Thomas fashola', 'thomas@email.com'],
-                three: ['Thomas fashola', 'thomas@email.com'],
-                four: ['Thomas fashola', 'thomas@email.com'],
-                five: ['Thomas fashola', 'thomas@email.com'],
-                six: ['Thomas fashola', 'thomas@email.com'],
-                seven: ['Thomas fashola', 'thomas@email.com'],
-                eight: ['Thomas fashola', 'thomas@email.com']
-            },  
-            videoLink: 'https://www.youtube.com/embed/qAxDk5oljc8',
-            inspiration: 'lorem lorem lorem loem lorem orem  lorem lorem loem lorem orem',
-            whatitdoes: 'lorem lorem loem lorem orem ',
-            stackused: ['Next.js', 'React', 'Tailwind.css'],
-            challenges: 'lorem lorem loem lorem orem ',
-            proudof: 'lorem lorem loem lorem orem ',
-            hostedlink: 'www.facebook.com',
-            image: 'https.jpg'
-
-
-        },
-        {
-            id: 2,
-            name: '#sefan celafaremo(ITALIAN)',
-            text: 'second projects lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
-            color: '#4D2CFF',
-            theme: 'No Poverty',
-            about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
-            members: {
-                one: ['Thomas fashola', 'thomas@email.com'],
-                two: ['Thomas fashola', 'thomas@email.com'],
-                three: ['Thomas fashola', 'thomas@email.com'],
-                four: ['Thomas fashola', 'thomas@email.com'],
-                five: ['Thomas fashola', 'thomas@email.com'],
-                six: ['Thomas fashola', 'thomas@email.com'],
-                seven: ['Thomas fashola', 'thomas@email.com'],
-                eight: ['Thomas fashola', 'thomas@email.com']
-            },  
-            videoLink: 'https://www.youtube.com',
-            inspiration: 'lorem lorem lorem loem lorem orem  lorem lorem loem lorem orem',
-            whatitdoes: 'lorem lorem loem lorem orem ',
-            stackused: ['Next.js', 'React', 'Tailwind.css'],
-            challenges: 'lorem lorem loem lorem orem ',
-            proudof: 'lorem lorem loem lorem orem ',
-            hostedlink: 'www.facebook.com',
-            image: 'https.jpg'
-
-        },
-        {
-            id: 3,
-            name: '#sefan celafaremo(ITALIAN)',
-            text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
-            color: '#4D2CFF',
-            theme: 'No Poverty',
-            about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
-            members: {
-                one: ['Thomas fashola', 'thomas@email.com'],
-                two: ['Thomas fashola', 'thomas@email.com'],
-                three: ['Thomas fashola', 'thomas@email.com'],
-                four: ['Thomas fashola', 'thomas@email.com'],
-                five: ['Thomas fashola', 'thomas@email.com'],
-                six: ['Thomas fashola', 'thomas@email.com'],
-                seven: ['Thomas fashola', 'thomas@email.com'],
-                eight: ['Thomas fashola', 'thomas@email.com']
-            },  
-            videoLink: 'https://www.youtube.com',
-            inspiration: 'lorem lorem lorem loem lorem orem  lorem lorem loem lorem orem',
-            whatitdoes: 'lorem lorem loem lorem orem ',
-            stackused: ['Next.js', 'React', 'Tailwind.css'],
-            challenges: 'lorem lorem loem lorem orem ',
-            proudof: 'lorem lorem loem lorem orem ',
-            hostedlink: 'www.facebook.com',
-            image: 'https.jpg'
-
-        },
-        {
-            id: 4,
-            name: '#sefan celafaremo(ITALIAN)',
-            text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
-            color: '#4D2CFF',
-            theme: 'No Poverty',
-            about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
-            members: {
-                one: ['Thomas fashola', 'thomas@email.com'],
-                two: ['Thomas fashola', 'thomas@email.com'],
-                three: ['Thomas fashola', 'thomas@email.com'],
-                four: ['Thomas fashola', 'thomas@email.com'],
-                five: ['Thomas fashola', 'thomas@email.com'],
-                six: ['Thomas fashola', 'thomas@email.com'],
-                seven: ['Thomas fashola', 'thomas@email.com'],
-                eight: ['Thomas fashola', 'thomas@email.com']
-            },  
-            videoLink: 'https://www.youtube.com',
-            inspiration: 'lorem lorem lorem loem lorem orem  lorem lorem loem lorem orem',
-            whatitdoes: 'lorem lorem loem lorem orem ',
-            stackused: ['Next.js', 'React', 'Tailwind.css'],
-            challenges: 'lorem lorem loem lorem orem ',
-            proudof: 'lorem lorem loem lorem orem ',
-            hostedlink: 'www.facebook.com',
-            image: 'https.jpg'
-
-        },
-        {
-            id: 5,
-            name: '#sefan celafaremo(ITALIAN)',
-            text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
-            color: '#4D2CFF',
-            theme: 'No Poverty',
-            about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
-            members: {
-                one: ['Thomas fashola', 'thomas@email.com'],
-                two: ['Thomas fashola', 'thomas@email.com'],
-                three: ['Thomas fashola', 'thomas@email.com'],
-                four: ['Thomas fashola', 'thomas@email.com'],
-                five: ['Thomas fashola', 'thomas@email.com'],
-                six: ['Thomas fashola', 'thomas@email.com'],
-                seven: ['Thomas fashola', 'thomas@email.com'],
-                eight: ['Thomas fashola', 'thomas@email.com']
-            },  
-            videoLink: 'https://www.youtube.com',
-            inspiration: 'lorem lorem lorem loem lorem orem  lorem lorem loem lorem orem',
-            whatitdoes: 'lorem lorem loem lorem orem ',
-            stackused: ['Next.js', 'React', 'Tailwind.css'],
-            challenges: 'lorem lorem loem lorem orem ',
-            proudof: 'lorem lorem loem lorem orem ',
-            hostedlink: 'www.facebook.com',
-            image: 'https.jpg'
-
-        },
-        {
-            id: 6,
-            name: '#sefan celafaremo(ITALIAN)',
-            text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
-            color: '#4D2CFF',
-            theme: 'No Poverty',
-            about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
-            members: {
-                one: ['Thomas fashola', 'thomas@email.com'],
-                two: ['Thomas fashola', 'thomas@email.com'],
-                three: ['Thomas fashola', 'thomas@email.com'],
-                four: ['Thomas fashola', 'thomas@email.com'],
-                five: ['Thomas fashola', 'thomas@email.com'],
-                six: ['Thomas fashola', 'thomas@email.com'],
-                seven: ['Thomas fashola', 'thomas@email.com'],
-                eight: ['Thomas fashola', 'thomas@email.com']
-            },  
-            videoLink: 'https://www.youtube.com',
-            inspiration: 'lorem lorem lorem loem lorem orem  lorem lorem loem lorem orem',
-            whatitdoes: 'lorem lorem loem lorem orem ',
-            stackused: ['Next.js', 'React', 'Tailwind.css'],
-            challenges: 'lorem lorem loem lorem orem ',
-            proudof: 'lorem lorem loem lorem orem ',
-            hostedlink: 'www.facebook.com',
-            image: 'https.jpg'
-
-        },
-        {
-            id: 7,
-            name: '#sefan celafaremo(ITALIAN)',
-            text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
-            color: '#4D2CFF',
-            theme: 'No Poverty',
-            about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
-            members: {
-                one: ['Thomas fashola', 'thomas@email.com'],
-                two: ['Thomas fashola', 'thomas@email.com'],
-                three: ['Thomas fashola', 'thomas@email.com'],
-                four: ['Thomas fashola', 'thomas@email.com'],
-                five: ['Thomas fashola', 'thomas@email.com'],
-                six: ['Thomas fashola', 'thomas@email.com'],
-                seven: ['Thomas fashola', 'thomas@email.com'],
-                eight: ['Thomas fashola', 'thomas@email.com']
-            },  
-            videoLink: 'https://youtu.be/qAxDk5oljc8',
-            inspiration: 'lorem lorem lorem loem lorem orem  lorem lorem loem lorem orem',
-            whatitdoes: 'lorem lorem loem lorem orem ',
-            stackused: ['Next.js', 'React', 'Tailwind.css'],
-            challenges: 'lorem lorem loem lorem orem ',
-            proudof: 'lorem lorem loem lorem orem ',
-            hostedlink: 'www.facebook.com',
-            image: 'https.jpg'
-
-        },
-        {
-            id: 8,
-            name: '#sefan celafaremo(ITALIAN)',
-            text: 'lorem lorem loem lorem orem loem lorem orem is simply dummy text of the printing and loem lorem orem loem lorem orem loem lorem orem loem lorem orem loem lorem',
-            color: '#4D2CFF',
-            theme: 'No Poverty',
-            about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
-            members: {
-                one: ['Thomas fashola', 'thomas@email.com'],
-                two: ['Thomas fashola', 'thomas@email.com'],
-                three: ['Thomas fashola', 'thomas@email.com'],
-                four: ['Thomas fashola', 'thomas@email.com'],
-                five: ['Thomas fashola', 'thomas@email.com'],
-                six: ['Thomas fashola', 'thomas@email.com'],
-                seven: ['Thomas fashola', 'thomas@email.com'],
-                eight: ['Thomas fashola', 'thomas@email.com']
-            },  
-            videoLink: 'https://www.youtube.com',
-            inspiration: 'lorem lorem lorem loem lorem orem  lorem lorem loem lorem orem',
-            whatitdoes: 'lorem lorem loem lorem orem ',
-            stackused: ['Next.js', 'React', 'Tailwind.css'],
-            challenges: 'lorem lorem loem lorem orem ',
-            proudof: 'lorem lorem loem lorem orem ',
-            hostedlink: 'www.facebook.com',
-            image: 'https.jpg'
-
-        }
-        
-    ])
-    console.log(projects);
+    let { darkMode } = useContext(ModeContext)
+    let { featuredProjects : projects }= useContext(ProjectContext);
 
     let [selectedProject, setSelectedProject] = useState(null);
 
     const [showModal, setShowModal] = useState(false)
 
 
-
     const onProjectSelect = (project) => {
         setSelectedProject(project);
+
     }
 
     
@@ -262,13 +42,12 @@ const Home = () => {
     return (
         <ModalContext.Provider value={{ showModal, setShowModal }}>
             
-            <div >
+            <div>
                
                 <div className="bg-header">
                     <div className="page-head">
                         <div className="sponsors">
                             <span style={{ textAlign: 'center' }}> <img className="andela" src={andela} alt="andela" /> </span> <span className="facebook">FACEBOOK</span>
-                            
                         </div>
                             
                         <p className="build-container">#BUILDF<span><img className="sdg-small" src={sdg} alt="sdg" />R</span> <span >SDG</span></p>
@@ -323,39 +102,8 @@ const Home = () => {
                             <h2 className={darkMode ? `color-light theme-header my-4` : `color-dark theme-header my-4`}>PROJECTS BY SDG</h2>
                         </div>
 
-
-                        <div className="themes-container">
-                            <Link to="/themes/no-poverty" style={{ background: '#E5243B' }} className=" card  health  ">
-                                <div className=" text-white font-weight-bold">NO POVERTY</div>
-                            </Link>
-                            <Link to="/themes/zero-hunger" style={{ background: '#DDA639' }} className="card health">
-                                <div className=" text-white font-weight-bold">ZERO HUNGER</div>
-                            </Link>
-                            <Link to="/themes/good-health-and-wellbeing" style={{ background: '#4C9F38' }} className="card health">
-                                <div className=" text-white font-weight-bold">GOOD Health And Wellbeing</div>
-                            </Link>
-
-                            <Link to="/themes/quality-education" style={{ background: '#C5192D' }} className=" card health  ">
-                                <div className=" text-white font-weight-bold">Quality Education</div>
-                            </Link>
-                            <Link to="/themes/peace-and-justice" style={{ background: '#10689D' }} className="card health">
-                                <div className=" text-white font-weight-bold">Peace And Justice.</div>
-                            </Link>
-                            <Link to="/themes/decent-work" style={{ background: '#A21942' }} className="card health">
-                                <div className=" text-white font-weight-bold">Decent Work.</div>
-                            </Link>
-
-                            <Link to="/themes/industry-innovation" style={{ background: '#FA6926' }} className=" card  health  ">
-                                <div className=" text-white font-weight-bold">Industry innovation</div>
-                            </Link>
-                            <Link to="/themes/sustainable-cities" style={{ background: '#FB9D24' }} className="card  health">
-                                <div className=" text-white font-weight-bold">Sustainable Cities.</div>
-                            </Link>
-                            <Link to="/themes/patnership-for-goals" style={{ background: '#19486A' }} className="card health">
-                                <div className=" text-white font-weight-bold">Patnerships For Goals.</div>
-                            </Link>
-
-                        </div>
+                        <ThemeContainer/>
+                        
                  
                     </div>
                 </div>
@@ -365,8 +113,6 @@ const Home = () => {
                    
                         
                         <ProjectDetail project={selectedProject} />
-
-
 
 
                         <ProjectList projects={projects} onProjectSelect={onProjectSelect} />

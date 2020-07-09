@@ -281,8 +281,10 @@
 
 .themes-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
+    // grid-gap: 1rem;
+    // grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 // .theme-container > * {
@@ -296,13 +298,15 @@
     margin-bottom: 1rem;
     margin-left: 1rem;
     font-size: 2rem;
-
+    align-items: center;
+    // justify-items: center;
     // margin-left: .4rem;
 
     box-shadow: rgba(0, 0, 0, 0.125) 0px .4rem .8rem;
     border: none;
     -webkit-transition: transform .3s ease-in-out;
-    
+    display: grid;
+    justify-items: center;
 
 }
 

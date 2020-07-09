@@ -36,18 +36,15 @@ export default function ProjectDetail({project}) {
                             <a href={project.videoLink} target="_"> <i className="fas fa-external-link-alt fa-2x"></i>  </a>
                             </div>
                             <div className="project-about">
-                                <p >{project.text} lorem lorem lorem</p>
-                            <p className="group-members"><a href="google.com">{project.members.one[0]}</a>, <a href="google.com">{project.members.two[0]}</a>, <a href="google.com">{project.members.three[0]}</a>, <a href="google.com">{project.members.four[0]}</a>, <a href="google.com">{project.members.five[0]}</a> </p>
+                            <p >{project.text} lorem lorem lorem</p>
                             </div>
                             
                             <p className="project-image">iMAGE</p>
-                            {/* <a href="#"> </span></a> */}
                     </div>
 
                     <div className="">
                         <div className="">
                             <div className="">
-                                {/* <p style={{ fontSize: '2rem' }}>{project.text}</p> */}
                             </div>
                     
                 
