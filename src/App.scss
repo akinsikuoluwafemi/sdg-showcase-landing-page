@@ -134,6 +134,11 @@
   animation-duration: 2s;
 }
 
+.loader {
+    display: block;
+    height: 5rem!important;
+    width: 5rem!important;
+}
 
 
 
@@ -322,6 +327,7 @@
 // 
 
 .project-card-container {
+    padding: 3rem 0;
     display: grid;
     grid-template-rows: repeat(4,1fr);
     grid-template-columns: repeat(2,1fr);

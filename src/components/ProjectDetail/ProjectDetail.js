@@ -9,7 +9,7 @@ export default function ProjectDetail({project}) {
 
     let { showModal, setShowModal } = useContext(ModalContext);
     console.log(showModal +'from detail');
-
+    // console.log(loading)
     if (!project) {
 
         return (
@@ -27,8 +27,9 @@ export default function ProjectDetail({project}) {
                     <div className="grid-container">
                         <div className='project-header'>
                             <h1 className="project-name">{project.name}</h1>
-                            <span className="goal-name">No Poverty</span>
-                            
+                        <span className="goal-name">No Poverty</span>
+                        
+                            {/* <div>{loading}</div> */}
                             
                             <div className="icons">
                                     <span onClick={() => setShowModal(false)} className="close">&times;</span>

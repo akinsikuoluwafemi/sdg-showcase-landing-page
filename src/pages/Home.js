@@ -14,7 +14,7 @@ import ProjectDetail from '../components/ProjectDetail/ProjectDetail';
 import sdg from '../images/sdg.png';
 import andela from '../images/andela.png';
 import ThemeContainer from '../components/ThemeContainer';
-
+import Loading from '../components/Loading';
 
 const Home = () => {
     
@@ -25,8 +25,8 @@ const Home = () => {
     },[])
 
     let { darkMode } = useContext(ModeContext)
-    let { featuredProjects : projects }= useContext(ProjectContext);
-
+    let { featuredProjects : projects, loading }= useContext(ProjectContext);
+    console.log(loading)
     let [selectedProject, setSelectedProject] = useState(null);
 
     const [showModal, setShowModal] = useState(false)
@@ -110,10 +110,11 @@ const Home = () => {
 
                 <div className={darkMode ? `dark-mode` : `light-mode`}>
                     <div className="container py-5">
-                   
+
                         
                         <ProjectDetail project={selectedProject} />
 
+                        {/* <Loading/> */}
 
                         <ProjectList projects={projects} onProjectSelect={onProjectSelect} />
 
