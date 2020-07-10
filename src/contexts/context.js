@@ -42,18 +42,18 @@ class ProjectProvider extends Component {
         return tempItems;
     }
 
-
-
-
-
-
+    getTheme = (theme) => {
+        let tempProjects = [...this.state.projects];
+        const project = tempProjects.filter(project => project.theme === theme)
+        return project;
+    }
 
 
 
      render() {
          return (
              <>
-                 <ProjectContext.Provider value={{...this.state}}>
+                 <ProjectContext.Provider value={{...this.state, getTheme: this.getTheme}}>
 
                      {this.props.children}
 
