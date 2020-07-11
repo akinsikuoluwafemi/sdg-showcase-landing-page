@@ -14,7 +14,6 @@ import ProjectDetail from '../components/ProjectDetail/ProjectDetail';
 import sdg from '../images/sdg.png';
 import andela from '../images/andela.png';
 import ThemeContainer from '../components/ThemeContainer';
-import Loading from '../components/Loading';
 
 const Home = () => {
     

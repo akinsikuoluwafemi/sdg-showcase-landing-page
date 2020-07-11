@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ProjectContext } from '../contexts/context';
-
 
 
 const ThemeCard = ({name,color}) => {
@@ -11,6 +9,5 @@ const ThemeCard = ({name,color}) => {
         </Link>
     )
 }
-
 
 export default ThemeCard;
