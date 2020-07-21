@@ -272,7 +272,7 @@ const Home = () => {
                         </div>
                             
                         <p className="build-container">#BUILDF<span><img className="sdg-small" src={sdg} alt="sdg" />R</span> <span >SDG</span></p>
-                        <p className="challenge animate__animated ">CHALLENGE <span className="year">2020</span></p>   
+                        <p className="challenge animate__animated animate__pulse">CHALLENGE <span className="year">2020</span></p>   
                                 
                     </div>
 
