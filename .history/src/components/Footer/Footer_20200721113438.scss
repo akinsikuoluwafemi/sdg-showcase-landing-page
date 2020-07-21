@@ -1,0 +1,112 @@
+.foot {
+    background: #E0E6ED!important;
+}
+.footer {
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+//   position: fixed;
+    height: 30rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #E0E6ED;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-heading {
+        font-family: inherit;
+        padding: 1.5rem 0;
+        letter-spacing: 0.02em;
+        line-height: 1.125;
+        color: var(--theme-ui-colors-secondary,#3c4858);
+        font-size: 2.7rem;
+        margin-top: 0;
+        margin-bottom: -.8rem;
+        font-family: 'Caveat', cursive;
+        color: white;
+        font-weight: bold;
+
+
+    }
+  
+}
+
+
+
+.foote {
+    display: grid!important;
+    height: 20rem;
+
+    // background: #777;
+    grid-template-columns: 80px repeat(11, 1fr)!important;
+    grid-template-rows: repeat(12,1fr)!important;
+}
+
+
+// .arrow-container {
+//     // background: pink;
+//     grid-column: 1/2;
+//     grid-row: 1/-1;
+//     height: 20rem;
+
+//     // align-items: end;
+//     justify-content: center;    
+//     display: grid;
+//     overflow: hidden;
+
+
+// }
+
+.arrow-image {
+    width: 3rem;
+    align-items: center;
+    align-content: center;
+    grid-row: 9/10;
+    cursor: pointer;
+
+}
+
+.footer-background {
+    // background: rgb(78, 136, 201);
+    height: 25rem;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    // background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB );
+    background: linear-gradient(-45deg, #E5243B, #4C9F38, #10689D, #FB9D24 );
+    opacity: .7;
+
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 30s ease-in-out infinite;
+    display: grid;
+    font-size: 2rem;
+}
+
+@keyframes change {
+    from {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    to {
+        background-position: 0 50%;
+    }
+}
+
+.footer-text {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    color: white;
+    opacity: 1;
+}
+
+.shake:hover {
+    animation: shakeY; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+}
