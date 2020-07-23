@@ -136,6 +136,7 @@ export default [
             theme: 'Good Health and Well-being',
             about: "Mental health is something that many people overlook or take lightly but the reality is that people are suffering from depression, anxiety, Postpartum Depression, and so on. Making mental health care accessible to everyone can improve the quality of life.",
             videoLink: 'https://www.youtube.com/embed/CnWgijzhka4',
+            https://youtu.be/CnWgijzhka4
             stackused: ["React"],
             nationality: ["Nigeria", "Ghana"],
             hostedlink: 'https://safehaven-frontend.herokuapp.com/',
@@ -185,19 +186,12 @@ export default [
             email: "todak2000@gmail.com",
             members: [
                 "taiwo sunday akinlose",
-                "Shedrack Ajaegbu",
-                "Anjorin Olufemi Benjamin",
-                "Ayomide Dosumu",
-                "David Akpan",
-                "David Daniel",
-                "Edewor Onyedika",
-                "Emeka Thomas Onwugbonu",
-                "Ifere Okibe",
-                "Opysko",
-                "Samuel Alex",
-
-
-
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola"
             ],
             images: [
                 {
@@ -235,12 +229,12 @@ export default [
             email:"kelechioliver96@gmail.com",
             members: [
                 "Azorji Kelechi Oliver",
-                "Matthew Nte",
-                "Sikiru Moshood",
-                "Alimi Kehinde Morufudeen",
-                "Isah Ohieku",
-                "Okpallannuozo Nnaemeka",
-                "Sanya"
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola"
             ],
             images: [
                 {

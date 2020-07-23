@@ -74,7 +74,7 @@ export default function ProjectDetail({project}) {
                         <p className="h3 info">{
                             project.members.map((item,i) => (
                                 <ul>
-                                    <li key={i}>{item}</li>
+                                    <li key={}>{item}</li>
                                 </ul>
                             ))
                         }</p>

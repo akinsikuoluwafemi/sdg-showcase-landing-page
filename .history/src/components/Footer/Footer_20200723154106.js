@@ -13,7 +13,7 @@ export default function Footer() {
                 
                 <div className={darkMode ? ` footer-background dark-footer` : ` footer-background light-footer`}>
                     <div className="footer-text">
-                        <p>This website was built by  <a style={{ color: '#35DDFF' }} href="https://www.google.com/">Femi</a>, a Programme Assistant in the <span style={{ color: '#0fddff' }}>#BUILDFORSDG.</span></p>
+                        <p>This website was built by  <a style={{ color: '' }} href="https://www.google.com/">Femi</a>, a Programme Assistant in the <span style={{ color: '#0fddff' }}>#BUILDFORSDG.</span></p>
                         <h2 className="footer-heading">Africans can build amazing products.</h2>
                         <p className="footer-heading">We just need opportunities...</p>
                     </div>

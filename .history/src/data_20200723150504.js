@@ -194,6 +194,7 @@ export default [
                 "Emeka Thomas Onwugbonu",
                 "Ifere Okibe",
                 "Opysko",
+
                 "Samuel Alex",
 
 
@@ -235,12 +236,12 @@ export default [
             email:"kelechioliver96@gmail.com",
             members: [
                 "Azorji Kelechi Oliver",
-                "Matthew Nte",
-                "Sikiru Moshood",
-                "Alimi Kehinde Morufudeen",
-                "Isah Ohieku",
-                "Okpallannuozo Nnaemeka",
-                "Sanya"
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola"
             ],
             images: [
                 {

@@ -66,15 +66,15 @@ export default function ProjectDetail({project}) {
                         <p className="h3 info">{project.stackused.map(stack => stack)}</p>
                     </div>
                     <div>
-                        <h2 className="font-weight-bold">Nationality :</h2>
-                        <p className="h3 info">{project.nationality.map((country,i) => <li key={i}>{country}</li>)}</p>
+                        <h2 className="font-weight-bold">Facebook Open source used :</h2>
+                        <p className="h3 info">{project.stackused.map(stack => stack)}</p>
                     </div>
                     <div>
                         <h2 className="font-weight-bold">Team Members :</h2>
                         <p className="h3 info">{
-                            project.members.map((item,i) => (
+                            project.members.map(item => (
                                 <ul>
-                                    <li key={i}>{item}</li>
+                                    <li>{item}</li>
                                 </ul>
                             ))
                         }</p>

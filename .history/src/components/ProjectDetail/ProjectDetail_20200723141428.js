@@ -29,10 +29,10 @@ export default function ProjectDetail({project}) {
                         <p style={{color: project.color}} className="theme-name">{project.theme}</p>
                     </div>
                     <div className="icon-modal">
-                        <span style={{color: 'white'}}  onClick={() => setShowModal(false)} className="close">
+                        <a href="a" onClick={() => setShowModal(false)} className="close">
                             <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
                         
-                        </span>
+                        </a>
 
                         <a style={{ color: 'white' }} className="close-btn" href={project.hostedlink} target="_">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
@@ -66,15 +66,11 @@ export default function ProjectDetail({project}) {
                         <p className="h3 info">{project.stackused.map(stack => stack)}</p>
                     </div>
                     <div>
-                        <h2 className="font-weight-bold">Nationality :</h2>
-                        <p className="h3 info">{project.nationality.map((country,i) => <li key={i}>{country}</li>)}</p>
-                    </div>
-                    <div>
                         <h2 className="font-weight-bold">Team Members :</h2>
                         <p className="h3 info">{
-                            project.members.map((item,i) => (
+                            project.members.map(item => (
                                 <ul>
-                                    <li key={i}>{item}</li>
+                                    <li>{item}</li>
                                 </ul>
                             ))
                         }</p>

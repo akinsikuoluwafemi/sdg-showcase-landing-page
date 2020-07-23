@@ -22,8 +22,7 @@ export default [
                 "Otubusin Ademuyiwa Olutayo",
                 "Ridwan Busari",
                 "Shadrach Sani",
-                "Umeh Promise Chidubem",
-                "vincent edeh"
+                "Thomas fashola"
             ],
             images: [
                 {
@@ -63,7 +62,10 @@ export default [
                 "Jason IBISI",
                 "Osemudiamen Eronlan",
                 "Mbiplang Ardel (Jotham)",
-                "Daniel Chukwurah"
+                "Daniel Chukwurah",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola"
             ],
             images: [
                 {
@@ -101,11 +103,12 @@ export default [
             email: "",
             members: [
                 "Olagunju Daniel",
-                "Chidozie Managwu",
-                "Olarewaju Temitope Albert",
-                "Mohammed Zubairu Ahmad",
-                "Mohammed Bayero Yayandi",
-                "Aminu Israel"
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola"
             ],
             images: [
                 {
@@ -135,7 +138,7 @@ export default [
             color: '#4C9F38',
             theme: 'Good Health and Well-being',
             about: "Mental health is something that many people overlook or take lightly but the reality is that people are suffering from depression, anxiety, Postpartum Depression, and so on. Making mental health care accessible to everyone can improve the quality of life.",
-            videoLink: 'https://www.youtube.com/embed/CnWgijzhka4',
+            videoLink: 'xxx',
             stackused: ["React"],
             nationality: ["Nigeria", "Ghana"],
             hostedlink: 'https://safehaven-frontend.herokuapp.com/',
@@ -185,19 +188,12 @@ export default [
             email: "todak2000@gmail.com",
             members: [
                 "taiwo sunday akinlose",
-                "Shedrack Ajaegbu",
-                "Anjorin Olufemi Benjamin",
-                "Ayomide Dosumu",
-                "David Akpan",
-                "David Daniel",
-                "Edewor Onyedika",
-                "Emeka Thomas Onwugbonu",
-                "Ifere Okibe",
-                "Opysko",
-                "Samuel Alex",
-
-
-
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola"
             ],
             images: [
                 {
@@ -235,12 +231,12 @@ export default [
             email:"kelechioliver96@gmail.com",
             members: [
                 "Azorji Kelechi Oliver",
-                "Matthew Nte",
-                "Sikiru Moshood",
-                "Alimi Kehinde Morufudeen",
-                "Isah Ohieku",
-                "Okpallannuozo Nnaemeka",
-                "Sanya"
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola"
             ],
             images: [
                 {
@@ -272,7 +268,6 @@ export default [
             about: 'Our inspiration was gotten from the fact that we have lots of acres of untapped land not used for farming globally.',
             videoLink: 'https://www.youtube.com/embed/cMNPVUTqHlk',
             stackused: [''],
-            nationality: ["Nigeria"],
             hostedlink: 'https://donate-a-seed.herokuapp.com/',
             featured: true,
             email: "malikmukhtar63@gmail.com",

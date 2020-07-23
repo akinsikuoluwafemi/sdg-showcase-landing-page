@@ -187,17 +187,10 @@ export default [
                 "taiwo sunday akinlose",
                 "Shedrack Ajaegbu",
                 "Anjorin Olufemi Benjamin",
-                "Ayomide Dosumu",
-                "David Akpan",
-                "David Daniel",
-                "Edewor Onyedika",
-                "Emeka Thomas Onwugbonu",
-                "Ifere Okibe",
-                "Opysko",
-                "Samuel Alex",
-
-
-
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola"
             ],
             images: [
                 {
@@ -235,12 +228,12 @@ export default [
             email:"kelechioliver96@gmail.com",
             members: [
                 "Azorji Kelechi Oliver",
-                "Matthew Nte",
-                "Sikiru Moshood",
-                "Alimi Kehinde Morufudeen",
-                "Isah Ohieku",
-                "Okpallannuozo Nnaemeka",
-                "Sanya"
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola"
             ],
             images: [
                 {

@@ -237,10 +237,10 @@ export default [
                 "Azorji Kelechi Oliver",
                 "Matthew Nte",
                 "Sikiru Moshood",
-                "Alimi Kehinde Morufudeen",
-                "Isah Ohieku",
-                "Okpallannuozo Nnaemeka",
-                "Sanya"
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola",
+                "Thomas fashola"
             ],
             images: [
                 {

@@ -72,9 +72,9 @@ export default function ProjectDetail({project}) {
                     <div>
                         <h2 className="font-weight-bold">Team Members :</h2>
                         <p className="h3 info">{
-                            project.members.map((item,i) => (
+                            project.members.map(item => (
                                 <ul>
-                                    <li key={i}>{item}</li>
+                                    <li>{item}</li>
                                 </ul>
                             ))
                         }</p>

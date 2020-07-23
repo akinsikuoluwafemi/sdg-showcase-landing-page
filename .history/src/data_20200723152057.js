@@ -240,7 +240,7 @@ export default [
                 "Alimi Kehinde Morufudeen",
                 "Isah Ohieku",
                 "Okpallannuozo Nnaemeka",
-                "Sanya"
+                "Thomas fashola"
             ],
             images: [
                 {
