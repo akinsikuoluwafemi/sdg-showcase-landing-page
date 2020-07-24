@@ -111,6 +111,7 @@
 }
 .challenge {
     transition: opacity .5s ease;
+    // background-color: white;
     grid-row: 3/-1;
     grid-column: 1/-1;
     font-size: 8rem;
@@ -137,6 +138,10 @@
     height: 5rem!important;
     width: 5rem!important;
 }
+
+
+
+// 
 
 
 
@@ -239,13 +244,16 @@
     
     font-size: 2.2rem;
     color: #1f2d3d;
+    // padding: 0 .5rem;
     
 }
 
 .bg-section2 {
     background: #F9FAFC;
 }
+// section 2 end
 
+// section 3 start
 
 .top-projects {
     box-sizing: border-box;

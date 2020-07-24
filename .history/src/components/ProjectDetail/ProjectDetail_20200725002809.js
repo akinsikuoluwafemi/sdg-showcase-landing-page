@@ -1,8 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useRef } from 'react';
 import '../../App.scss';
 import { ModalContext } from '../../contexts/ModalContext';
 import ReactPlayer from 'react-player';
 import { ProjectContext } from '../../contexts/context'
+import Loading from '../Loading'
 
 
 export default function ProjectDetail({ project }){
@@ -88,7 +89,7 @@ export default function ProjectDetail({ project }){
                         <h2 className="font-weight-bold">Team Members :</h2>
                         <p className="h3 info">{
                             project.members.map((item, i) => (
-                                <ul key={i}>
+                                <ul>
                                     <li >{item}</li>
                                 </ul>
                             ))

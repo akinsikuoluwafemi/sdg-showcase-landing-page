@@ -3,6 +3,7 @@ import '../../App.scss';
 import { ModalContext } from '../../contexts/ModalContext';
 import ReactPlayer from 'react-player';
 import { ProjectContext } from '../../contexts/context'
+import Loading from '../Loading'
 
 
 export default function ProjectDetail({ project }){

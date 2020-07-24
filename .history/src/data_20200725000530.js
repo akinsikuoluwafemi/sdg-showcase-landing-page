@@ -309,7 +309,7 @@ export default [
         },
         fields: {
             name: 'SmeVest',
-            headline: 'SMEs have major problems accessing investments which will make them more productive and also grow faster, so we came up with this initiative.',
+            headline: 'SMEs have major problems accessing investments which will make them more productive and also grow faster, so w',
             color: '#4D2CFF',
             theme: 'Good-Health-And-Wellbeing',
             about: 'lorem lorem loem lorem orem loem lorem orem orem is simply dummy text of ',
