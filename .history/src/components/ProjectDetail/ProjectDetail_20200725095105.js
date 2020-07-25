@@ -56,7 +56,7 @@ export default function ProjectDetail({ project }){
 
 
                     <div className='player-wrapper'>
-                    
+                        
                         <ReactPlayer
                             playing={showModal ? true : false}
                             className='react-player'
@@ -64,6 +64,7 @@ export default function ProjectDetail({ project }){
                             width='100%'
                             height='100%'
                             controls={true}
+
                         />
                     </div>
 

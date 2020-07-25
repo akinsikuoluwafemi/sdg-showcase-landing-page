@@ -64,6 +64,7 @@ export default function ProjectDetail({ project }){
                             width='100%'
                             height='100%'
                             controls={true}
+
                         />
                     </div>
 

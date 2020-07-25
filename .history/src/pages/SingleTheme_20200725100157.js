@@ -1,6 +1,5 @@
 import React, { Component} from 'react';
 import { ProjectContext } from '../contexts/context';
-import '../App.scss'
 
 
 

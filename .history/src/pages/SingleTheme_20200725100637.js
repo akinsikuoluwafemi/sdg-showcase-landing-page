@@ -24,7 +24,7 @@ class SingleTheme extends Component {
 
        
 
-        const renderedTheme = theme.map(item => {
+        const renderedTheme = theme.map(projevt => {
             return (
                 <div>
                     {item.name}
