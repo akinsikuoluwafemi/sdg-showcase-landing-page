@@ -1,0 +1,16 @@
+.text-space {
+    letter-spacing: 1px;
+}
+
+.text-theme {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.themeproject-container {
+    display: grid;
+    grid--rowgap: 1rem;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
