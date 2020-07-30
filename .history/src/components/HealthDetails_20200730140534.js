@@ -1,33 +1,30 @@
 import React, {useContext} from 'react';
 import '../App.scss';
 import ReactPlayer from 'react-player';
-import { SustainableModalContext } from '../contexts/ModalContext';
+import { HealthModalContext } from '../contexts/ModalContext';
 
 
-
-
-export default function SustainableDetails({ project }) {
+export default function HealthDetails({ project }) {
     
-    let { sustainModal, setSustainModal } = useContext(SustainableModalContext);
+    let { healthModal, setHealthModal } = useContext(HealthModalContext);
     
-        if (!project){
+      if (!project){
 
         return (
             <div style={{ display: 'none' }}>Loading...</div>
 
         )
-      }
-    
-    const closeModal = () =>{
-        setSustainModal(false);
+    }
+
+     const closeModal = () =>{
+         setHealthModal(false)
 
     }
 
 
 
-
     return (
-        <div className={sustainModal ? `modal` : `hide-modal`}>
+        <div className={healthModal ? `modal` : `hide-modal`}>
 
             <div style={{ background: `${project.color}` }} className="shadow-lg  modal-content">
                 <div className="header-modal">
@@ -50,12 +47,12 @@ export default function SustainableDetails({ project }) {
 
                 <div className="inner-content">
 
-                    {project.videoLink.length === 0 ? <div className=" small-img big-image img-responsive" style={{ backgroundImage: `url(${project.image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}></div> :
+                    {project.videoLink.length === 0 ? <div className=" small-img big-image img-responsive" style={{ backgroundImage: `url(${project.image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'top' }}></div> :
 
                         <div className='player-wrapper'>
 
                             <ReactPlayer
-                                playing={sustainModal ? true : false}
+                                playing={healthModal ? true : false}
                                 className='react-player'
                                 url={project.videoLink}
                                 width='100%'
@@ -76,6 +73,7 @@ export default function SustainableDetails({ project }) {
                         <p className="h3 info">{project.about}</p>
                     </div>
 
+                    {project.stackused.length === 0 ? }
                     <div>
                         <h2 className="font-weight-bold">Facebook Open source used :</h2>
                         <p className="h3 info">{project.stackused.map(stack => stack)}</p>
@@ -102,6 +100,5 @@ export default function SustainableDetails({ project }) {
 
             </div>
         </div>
-
     )
 }

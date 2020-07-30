@@ -1231,7 +1231,7 @@ export default [
             about: "Our app monitors and alert users of over speeding in real time during their travel and users can take corrective action to lower their speed within speed limits to prevent accident. A risk profile of users is built based their over speeding history which can be exposed to law enforcement agencies for punitive measures especially for drivers. Also vehicles identified can be tagged in over speeding event to add to the vehicle's accident risk level profile due to over speeding.",
             color: '#4C9F38',
             theme: 'Good-Health-and-Well-being',
-            headline: "This project is to halt the increasing number of preventable fatal road accidents in Ghana.",
+            headline: "This project is to halt the Increasing number of preventable fatal road accidents in Ghana.",
             featured: false,
             videoLink: "",
             stackused: [],

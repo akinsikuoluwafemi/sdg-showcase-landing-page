@@ -50,7 +50,7 @@ export default function SustainableDetails({ project }) {
 
                 <div className="inner-content">
 
-                    {project.videoLink.length === 0 ? <div className=" small-img big-image img-responsive" style={{ backgroundImage: `url(${project.image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}></div> :
+                    {project.videoLink.length === 0 ? <div className=" small-img big-image img-responsive" style={{ backgroundImage: `url(${project.image})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'top' }}></div> :
 
                         <div className='player-wrapper'>
 

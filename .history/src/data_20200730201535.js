@@ -1150,104 +1150,11 @@ export default [
             members: [
                 "Adeyosola Mustapha",
                 "Omafovbe",
-                "Frederick Atabo",
                 "Samuel Nwankwo",
-                "Awe Muideen",
-                "Opanuga Oluwafemi",
-                "Farouq",
-                "Adeyosola",
-                " Adeyosola Mustapha"
+                "Joshua Paul",
+                "Emmanuel John Oluwasina"
             ],
             image: 'https://res.cloudinary.com/dt69gb9me/image/upload/f_auto,q_auto/v1596133494/Team-049_fcw0ub.png',
-
-            images: [
-                {
-                    fields: {
-                        file: {
-                            url: 'img.jpg'
-                        }
-                    }
-                },
-                {
-                    fields: {
-                        file: {
-                            url: 'img.jpg'
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    {
-        sys: {
-            id: "27"
-        },
-        fields: {
-            name: 'Iamnotcrazyjustsick',
-            about: "This project enables users to fight against ignorance about mental health (disease/care), fight against stigmatization of mental health care centers, encourages youth to become mental health professionals, encourage people to engage in a mental disease diagnostic/care process and provide easy access to mental health professionals.",
-            color: '#4C9F38',
-            theme: 'Good-Health-and-Well-being',
-            headline: "Developing countries find it hard proving medical assistance to patients with mental diseases, this motivated my team to develop this project.",
-            featured: false,
-            videoLink: "https://www.youtube.com/embed/yPQLSlmj8F8",
-            stackused: [],
-            nationality: ["Cameroun"],
-            email: "willynzesseu@gmail.com",
-            hostedlink: 'https://iamnotcrazyjustsick.netlify.app/',
-            members: [
-                "Alexis Willy Nzesseu Wandji",
-                "Fabrice",
-                "Jean",
-                "Bruno",
-                "Nelson",
-                
-            ],
-            image: 'https://res.cloudinary.com/dt69gb9me/image/upload/f_auto,q_auto/v1596133494/Team-049_fcw0ub.png',
-
-            images: [
-                {
-                    fields: {
-                        file: {
-                            url: 'img.jpg'
-                        }
-                    }
-                },
-                {
-                    fields: {
-                        file: {
-                            url: 'img.jpg'
-                        }
-                    }
-                }
-            ]
-        }
-    },
-    {
-        sys: {
-            id: "28"
-        },
-        fields: {
-            name: 'TranSafe',
-            about: "Our app monitors and alert users of over speeding in real time during their travel and users can take corrective action to lower their speed within speed limits to prevent accident. A risk profile of users is built based their over speeding history which can be exposed to law enforcement agencies for punitive measures especially for drivers. Also vehicles identified can be tagged in over speeding event to add to the vehicle's accident risk level profile due to over speeding.",
-            color: '#4C9F38',
-            theme: 'Good-Health-and-Well-being',
-            headline: "This project is to halt the increasing number of preventable fatal road accidents in Ghana.",
-            featured: false,
-            videoLink: "",
-            stackused: [],
-            nationality: ["Ghana"],
-            email: "send2fareed@gmail.com",
-            hostedlink: 'https://transafe-a15f3.web.app',
-            members: [
-                "Fareed Mohammed",
-                "Ian Cecil Mawuli Akoto",
-                "Christian Kojo Bosso",
-                "Ernestina Tawiah",
-                "Pus Gyamenah",
-                "Michael Hammond"
-
-            ],
-            image: 'https://res.cloudinary.com/dt69gb9me/image/upload/f_auto,q_auto/v1596137833/team-203_r2jp9v.png',
 
             images: [
                 {
