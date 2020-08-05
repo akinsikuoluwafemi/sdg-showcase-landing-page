@@ -12,6 +12,7 @@ import ProjectList from '../components/ProjectList/ProjectList';
 import ProjectDetail from '../components/ProjectDetail/ProjectDetail';
 
 import ThemeContainer from '../components/ThemeContainer';
+import andelalogo from '../images/Andelalogo.png';
 
 const Home = () => {
     
