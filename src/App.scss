@@ -5,26 +5,12 @@
 
 
 .bg-header {
-    height: 75vh;
-    background-color: #2E377F;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
-    width: 100vw;
-    color: white;
-    font-family: sans-serif;
-    // background-image: url('https://res.cloudinary.com/dt69gb9me/image/upload/f_auto,q_auto/v1596591157/bg_ggkbht.png');
-    background-image: url('./images/Bannersmall.png');
-    background-position: center;
-    background-size: cover;
+    background-image: url('./images/headerimg.png');
+    background-size: contain;
     background-repeat: no-repeat;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    padding: 3rem;
-    text-align: center;
-
+    width: 100%;
+    height: 0;
+    padding-top: 44.27%;
 }
 
 .partners-container {
