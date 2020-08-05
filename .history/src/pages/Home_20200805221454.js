@@ -43,24 +43,7 @@ const Home = () => {
             <div>
                
                 <div className="bg-header">
-                    {/* <div className="partners-container">
-                        <span className="partner-facebook">Facebook</span>
-                        &nbsp;&nbsp;<span className="rule">|</span>&nbsp;&nbsp;
-                        <img style={{width: '10rem'}} src={andelalogo} alt=""/>
-                    </div>
-                    <div>
-                        <span className="build-challenge font-weight-bold">BuildforSDG Challenge 2020</span>
-                    </div>
-                    <div className="hero-lg-text">
-                        <h2 className="innovation ">Innovation</h2>
-                        <h2 className="impact">Impact</h2>
-                        <h2 className="solution">Solution</h2>
-                    </div>
-
-                    <div>
-                        <span className="h2 detail font-weight-bold">2500+ Developers from 5 SubSaharan Africa Countries created 150+ projects using 450k+ lines of Code in 6 weeks to #BuildforSDG</span>
-                    </div> */}
-
+                    ?
                 </div>
 
                 

@@ -43,7 +43,7 @@ const Home = () => {
             <div>
                
                 <div className="bg-header">
-                    {/* <div className="partners-container">
+                    <div className="partners-container">
                         <span className="partner-facebook">Facebook</span>
                         &nbsp;&nbsp;<span className="rule">|</span>&nbsp;&nbsp;
                         <img style={{width: '10rem'}} src={andelalogo} alt=""/>
@@ -59,7 +59,7 @@ const Home = () => {
 
                     <div>
                         <span className="h2 detail font-weight-bold">2500+ Developers from 5 SubSaharan Africa Countries created 150+ projects using 450k+ lines of Code in 6 weeks to #BuildforSDG</span>
-                    </div> */}
+                    </div>
 
                 </div>
 
