@@ -51,14 +51,13 @@ const Home = () => {
                     <div>
                         <span className="build-challenge">BuildforSDG Challenge 2020</span>
                     </div>
-                    <div className="hero-lg-text">
-                        <h2 className="innovation">Innovation</h2>
-                        <h2 className="impact">Impact</h2>
-                        <h2 className="solution">Solution</h2>
-                    </div>
-
                     <div>
-                        <span className="h2">2500+ Developers from 5 SubSaharan Africa Countries created 150+ projects using 450k+ lines of Code in 6 weeks to #BuildforSDG</span>
+                        <span>Innovation</span>
+                        <span>Impact</p>
+                        <p>Solution</p>
+
+
+
                     </div>
 
                 </div>
@@ -68,9 +67,9 @@ const Home = () => {
                     <div className="container ">
                         <div className="row">
                             <div className="col-12 col-lg-9 my-5 intro-container">
-                                <p className={darkMode ? `color-light font-weight-bold` : `color-dark font-weight-bold`}>The <span style={{ color: '#0459DF' }}>#BuildforSDG</span> Challenge is a Facebook and Andela partnership initiative to up-skill developers across Sub-Saharan (Kenya, Uganda, Cameroon, Ghana, Nigeria and South-Africa) through a six-week immersive program where selected developers worked in agile remote teams to innovate on projects relating to the SDGs.</p>
-                                <p className={darkMode ? `color-light font-weight-bold` : `color-dark font-weight-bold`}>The <span style={{ color: '#0459DF' }}>#BuildforSDG</span> program is committed to helping empower you to build real-world, locally and relevant solutions focused on the Sustainable Development Goals(SDGs) while gaining skills you need to advance your career.</p>
-                                <p className={darkMode ? `color-light font-weight-bold` : `color-dark font-weight-bold`}>The <span style={{ color: '#0459DF' }}>Goal of the #BuildforSDG Challenge 2020</span> is to empower developers to build global, high-value, high-impact projects to help improve their market-readiness while learning within the community.</p>
+                                <p className={darkMode ? `color-light font-weight-bold` : `color-dark font-weight-bold`}>The <span style={{ color: '#0fddff' }}>#BuildforSDG</span> Challenge is a Facebook and Andela partnership initiative to up-skill developers across Sub-Saharan (Kenya, Uganda, Cameroon, Ghana, Nigeria and South-Africa) through a six-week immersive program where selected developers worked in agile remote teams to innovate on projects relating to the SDGs.</p>
+                                <p className={darkMode ? `color-light font-weight-bold` : `color-dark font-weight-bold`}>The <span style={{ color: '#0fddff' }}>#BuildforSDG</span> program is committed to helping empower you to build real-world, locally and relevant solutions focused on the Sustainable Development Goals(SDGs) while gaining skills you need to advance your career.</p>
+                                <p className={darkMode ? `color-light font-weight-bold` : `color-dark font-weight-bold`}>The <span style={{ color: '#0fddff' }}>Goal of the #BuildforSDG Challenge 2020</span> is to empower developers to build global, high-value, high-impact projects to help improve their market-readiness while learning within the community.</p>
                             </div>
                         </div>
 

@@ -14,7 +14,7 @@
     width: 100vw;
     color: white;
     font-family: sans-serif;
-    background-image: url('https://res.cloudinary.com/dt69gb9me/image/upload/f_auto,q_auto/v1596591157/bg_ggkbht.png');
+    // background-image: url('https://res.cloudinary.com/dt69gb9me/image/upload/f_auto,q_auto/v1596591157/bg_ggkbht.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,31 +41,23 @@
 }
 
 .hero-lg-text {
-    font-size: 5rem;
-    // display: flex;
-    // flex-direction: column;
+    font-size: 7rem;
+    display: flex;
+    flex-direction: column;
     font-weight: bolder;
     color: #D8A04B;
-    text-align: center;
+    font-family: 'Rowdies', cursive;
 }
 
 .innovation {
     letter-spacing: 1.5rem;
-    font-family: 'Anton', sans-serif;
-    font-size: 5rem;
 }
 
 .impact {
     letter-spacing: 1.5rem;
-    font-family: 'Anton', sans-serif;
-    font-size: 5rem;
-
 }
 .solution {
     letter-spacing: 1.5rem;
-    font-family: 'Anton', sans-serif;
-    font-size: 5rem;
-
 }
 
 // 1440, 1024, 768, 
@@ -541,8 +533,7 @@
     transition: transform .125s ease-in-out;
     border: .2rem solid currentColor;
     border-width: .3rem;
-    // color: var(--theme-ui-colors-cyan,#0fddff)!important;
-    color: #0459DF;
+    color: var(--theme-ui-colors-cyan,#0fddff)!important;
     margin-bottom: .8rem;
 }
 
