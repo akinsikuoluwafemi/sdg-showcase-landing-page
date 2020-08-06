@@ -12,10 +12,10 @@ export default function Header() {
 
             <ul class="header-list">
                 <li class="nav-item ">
-                    <Link to="/projects" className={darkMode ? `color-light list-font nav-link ` : `color-dark list-font  nav-link`} href="#">Projects</Link>
+                    <Link to="/projects" className={darkMode ? `color-light list-font nav-link mr-3` : `color-dark list-font  nav-link`} href="#">Projects</Link>
                 </li>
                 <li class="nav-item ">
-                    <Link to="/judges" className={darkMode ? `color-light list-font nav-link ml` : `color-dark  list-font nav-link ml`} href="#">Judging Process</Link>
+                    <Link to="/judges" className={darkMode ? `color-light list-font nav-link` : `color-dark list-font nav-link`} href="#">Judging Process</Link>
                 </li>
                
             </ul>

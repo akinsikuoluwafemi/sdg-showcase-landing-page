@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import Header from '../components/Header';
 import { ModeContext } from '../contexts/ModeContext';
-import ReactPlayer from 'react-player';
 
 
 
@@ -142,22 +141,11 @@ export default function Judges() {
                     </div>
                 </div>
 
-                <div className="row py-4 ">
-                    <div className="col-12 col-lg-8 text-center m-auto mx-4 my-4">
-                        <p className={darkMode ? `color-light font-weight-bold text-space h3 py-3 ` : `font-weight-bold py-3 color-dark text-space h3 `}>Also, a video containing the top 15 teams can be viewed below </p>
-
-                        <div className='player-wrapper'>
-
-                            <ReactPlayer
-                                // playing={sustainModal ? true : false}
-                                className='react-player'
-                                url="https://youtu.be/Dj_J_kphsf8"
-                                width='100%'
-                                height='100%'
-                                controls={true}
-                            />
-                        </div>
+                <div className="row ">
+                    <div>
+                        
                     </div>
+                    <p className={darkMode ? `color-light font-weight-bold text-space h3 text-center ` : `font-weight-bold text-center color-dark text-space h3 `}>Also, a video containing the top 15 teams can be viewed below </p>
 
                 </div>
 
