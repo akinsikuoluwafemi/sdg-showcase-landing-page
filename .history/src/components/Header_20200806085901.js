@@ -15,7 +15,7 @@ export default function Header() {
                     <Link to="/projects" className={darkMode ? `color-light list-font nav-link ` : `color-dark list-font  nav-link`} href="#">Projects</Link>
                 </li>
                 <li class="nav-item ">
-                    <Link to="/judges" className={darkMode ? `color-light list-font nav-link ml` : `color-dark  list-font nav-link ml`} href="#">Judging Process</Link>
+                    <Link to="/judges" className={darkMode ? `color-light list-font nav-link ` : `color-dark mr-4 list-font nav-link`} href="#">Judging Process</Link>
                 </li>
                
             </ul>

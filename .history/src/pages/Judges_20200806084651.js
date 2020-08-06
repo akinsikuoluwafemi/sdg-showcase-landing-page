@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import Header from '../components/Header';
 import { ModeContext } from '../contexts/ModeContext';
-import ReactPlayer from 'react-player';
 
 
 
@@ -120,7 +119,7 @@ export default function Judges() {
                         <div className="h2">
                             <p className={darkMode ? `color-light text-space h3  mb-3` : `mb-3 color-dark text-space h3 `}>The 15 teams that qualified for the next phase are </p>
                             
-                            <ul className={darkMode ? `color-orange h3 my-4` : `h3 my-4`}>
+                            <ul>
                                 <li>Team 247 (Donate A seed)</li>
                                 <li>Team-236 (Swiftana)</li>
                                 <li>Team-273 (Farmer's Expand)</li>
@@ -134,31 +133,15 @@ export default function Judges() {
                                 <li>Team-075 (Emergency Response System)</li>
                                 <li>Team-055 (MindCare)</li>
                                 <li>Team-003 (RoadMaster)</li>
-                                <li>Team-133 (Food Network)</li>    
+                                <li>Team-133 (Food Network)</li>
+
+
+                                
 
                             </ul>
                         </div>
 
                     </div>
-                </div>
-
-                <div className="row py-4 ">
-                    <div className="col-12 col-lg-8 text-center m-auto mx-4 my-4">
-                        <p className={darkMode ? `color-light font-weight-bold text-space h3 py-3 ` : `font-weight-bold py-3 color-dark text-space h3 `}>Also, a video containing the top 15 teams can be viewed below </p>
-
-                        <div className='player-wrapper'>
-
-                            <ReactPlayer
-                                // playing={sustainModal ? true : false}
-                                className='react-player'
-                                url="https://youtu.be/Dj_J_kphsf8"
-                                width='100%'
-                                height='100%'
-                                controls={true}
-                            />
-                        </div>
-                    </div>
-
                 </div>
 
 

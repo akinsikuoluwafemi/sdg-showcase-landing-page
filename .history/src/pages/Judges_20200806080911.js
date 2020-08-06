@@ -1,7 +1,6 @@
 import React, {useContext} from 'react';
 import Header from '../components/Header';
 import { ModeContext } from '../contexts/ModeContext';
-import ReactPlayer from 'react-player';
 
 
 
@@ -23,10 +22,10 @@ export default function Judges() {
                         <h2 className={darkMode ? `color-light h1 font-weight-bold mb-4` : ` h1 color-dark font-weight-bold  mb-4`}>Pitch-A-Thon</h2>
                         <p className={darkMode ? `color-light text-space h3 font-weight-bold` : `color-dark text-space h3 font-weight-bold`}>The goal of the pitch-a-thon was to showcase innovation by our participants in the BUildforSDG Cohort 1 and in turn have them get feedback on how they can improve on their developer skills and application of technology from a team of expert judges.</p>
                     
-                        <p className={darkMode ? `color-orange h3 my-4` : `h3 my-4`}>The pitch-a-thon involved selecting a team of expert judges that make up some of the brightest minds in our ecosystem. Each team project was judged based on three criteria communicated to them at the start of the cohort;</p>
+                        <p className="h3 my-4">The pitch-a-thon involved selecting a team of expert judges that make up some of the brightest minds in our ecosystem. Each team project was judged based on three criteria communicated to them at the start of the cohort;</p>
                         
                         <div className="h2">
-                            <ol className={darkMode ? `color-orange h3 my-4` : `h3 my-4`}>
+                            <ol>
                                 <li>Quality of the Idea(project concept)</li>
                                 <li>Implementation of the Idea</li>
                                 <li>Potential Impact on the SDG.</li>
@@ -41,7 +40,7 @@ export default function Judges() {
                 <div className="row my-3">
                     <div className="col-lg-8 col-sm-12">
                         <h2 className={darkMode ? `color-light h1 font-weight-bold ` : ` h1 color-dark font-weight-bold`}>Number of teams that participated</h2>
-                        <p className={darkMode ? `h3 color-orange` : `h3`}>60 teams</p>
+                        <p className="h3">60 teams</p>
                     </div>
 
                 </div>
@@ -54,7 +53,7 @@ export default function Judges() {
                         <p className={darkMode ? `color-light text-space h3 font-weight-bold mb-3` : `mb-3 color-dark text-space h3 font-weight-bold`}>The team’s projects were judged based on these three criteria.</p>
 
                         <div className="h2">
-                            <ol className={darkMode ? `color-orange h3 my-4` : `h3 my-4`}>
+                            <ol>
                                 <li><span>Quality of the Idea</span>: The creativity, authenticity, and originality of the idea was tested and this criterion had a score of 30%</li>
                                 <li>Implementation of the Idea: How well the idea was executed by the innovators was the next criterion to be tested. This had an overall score of 50%</li>
                                 <li>Potential Impact on the SDG: The impact the product could have in its stated SDG and the team members community.  was the final criterion for scoring. This ha a score of 20%</li>
@@ -75,7 +74,7 @@ export default function Judges() {
                         <p className={darkMode ? `color-light text-space h3 font-weight-bold mb-3` : `mb-3 color-dark text-space h3 font-weight-bold`}>The pitch-a-thon had a number of steps required by the team’s TTL to perform, they are </p>
 
                         <div className="h2">
-                            <ul className={darkMode ? `color-orange h3 my-4` : `h3 my-4`}>
+                            <ul>
                                 <li>Select an available and convenient date for your pitch</li>
                                 <li>Prepare a slide deck</li>
                                 <li>Ensure they received  comms on the availability of their selected date</li>
@@ -97,7 +96,7 @@ export default function Judges() {
                         <h2 className={darkMode ? `color-light h1 font-weight-bold mb-3` : `mb-3 h1 color-dark font-weight-bold`}>Judging Process</h2>
 
                         <div className="h2">
-                            <ol className={darkMode ? `color-orange h3 my-4` : `h3 my-4`}>
+                            <ol>
                                 <li>Introduction: Ask the Innovator to introduce themselves, team, professional experience</li>
                                 <li>Project details: In this section, Innovator will brief you on their SDG goal selected and the impact their solution hopes to make in their community</li>
                                 <li>Live demo: Innovator will be required to share the link to their live project with you(optional) They should also walk you through the project functionality and use through a shared screen</li>
@@ -111,7 +110,7 @@ export default function Judges() {
                 </div>
 
 
-                <div className="row py-3">
+                <div className="row my-3">
 
                     <div className="col-lg-8 col-sm-12">
                         <h2 className={darkMode ? `color-light h1 font-weight-bold mb-3` : `mb-3 h1 color-dark font-weight-bold`}>Results</h2>
@@ -120,7 +119,7 @@ export default function Judges() {
                         <div className="h2">
                             <p className={darkMode ? `color-light text-space h3  mb-3` : `mb-3 color-dark text-space h3 `}>The 15 teams that qualified for the next phase are </p>
                             
-                            <ul className={darkMode ? `color-orange h3 my-4` : `h3 my-4`}>
+                            <ul>
                                 <li>Team 247 (Donate A seed)</li>
                                 <li>Team-236 (Swiftana)</li>
                                 <li>Team-273 (Farmer's Expand)</li>
@@ -128,37 +127,13 @@ export default function Judges() {
                                 <li>Team-203 (TranSafe)</li>
                                 <li>Team-106 (DevData)</li>
                                 <li>Team-067 (SmeVest)</li>
-                                <li>Team-052 (Response 52)</li>
-                                <li>Team-183 (Chicken-Farm-Ke)</li>
-                                <li>Team-132 (goOrganic)</li>
-                                <li>Team-075 (Emergency Response System)</li>
-                                <li>Team-055 (MindCare)</li>
-                                <li>Team-003 (RoadMaster)</li>
-                                <li>Team-133 (Food Network)</li>    
+                                <li>Team-067 (SmeVest)</li>
+
 
                             </ul>
                         </div>
 
                     </div>
-                </div>
-
-                <div className="row py-4 ">
-                    <div className="col-12 col-lg-8 text-center m-auto mx-4 my-4">
-                        <p className={darkMode ? `color-light font-weight-bold text-space h3 py-3 ` : `font-weight-bold py-3 color-dark text-space h3 `}>Also, a video containing the top 15 teams can be viewed below </p>
-
-                        <div className='player-wrapper'>
-
-                            <ReactPlayer
-                                // playing={sustainModal ? true : false}
-                                className='react-player'
-                                url="https://youtu.be/Dj_J_kphsf8"
-                                width='100%'
-                                height='100%'
-                                controls={true}
-                            />
-                        </div>
-                    </div>
-
                 </div>
 
 

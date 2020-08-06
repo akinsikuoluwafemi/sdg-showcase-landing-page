@@ -1,19 +1,16 @@
 // cursor
 
 
-.color-orange {
-    color: #D8A04B;
-}
 
 
 
 .bg-header {
-    background-image: url('./images/banner.png');
+    background-image: url('./images/headerimg.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
-    padding-top: 33.33%;
+    padding-top: 44.27%;
 }
 
 .partners-container {
@@ -902,19 +899,6 @@
     align-items: center;
     list-style: none;
     margin: 0!important;
-}
-
-@media(max-width: 320px){
-    .header-list {
-        padding: 0;
-        margin: 0;
-    }
-}
-
-@media(max-width:320px){
-    .ml {
-        margin-left: -1.2rem;
-    }
 }
 
 

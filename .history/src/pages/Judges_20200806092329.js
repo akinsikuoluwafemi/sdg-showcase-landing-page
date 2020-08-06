@@ -142,9 +142,9 @@ export default function Judges() {
                     </div>
                 </div>
 
-                <div className="row py-4 ">
-                    <div className="col-12 col-lg-8 text-center m-auto mx-4 my-4">
-                        <p className={darkMode ? `color-light font-weight-bold text-space h3 py-3 ` : `font-weight-bold py-3 color-dark text-space h3 `}>Also, a video containing the top 15 teams can be viewed below </p>
+                <div className="row ">
+                    <div className="col-sm col-lg-6">
+                        <p className={darkMode ? `color-light font-weight-bold text-space h3 text-center ` : `font-weight-bold text-center color-dark text-space h3 `}>Also, a video containing the top 15 teams can be viewed below </p>
 
                         <div className='player-wrapper'>
 
