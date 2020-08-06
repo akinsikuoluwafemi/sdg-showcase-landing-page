@@ -126,26 +126,11 @@
   animation-duration: 2s;
 }
 
-.dev-logo {
-    margin-bottom: 2rem;
-}
-
-@media(max-width: 425px){
-        .dev-logo {
-        margin-bottom: 0rem;
-    }
-}
 
 .container-footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 
     grid-gap: 30px;
 }
 
-@media(max-width: 425px){
-    .container-footer {
-        grid-template-columns:  1fr;
-        grid-template-rows: repeat(2, 1fr);
-    }
-}
