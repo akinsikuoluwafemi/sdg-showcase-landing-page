@@ -3,7 +3,7 @@
 }
 
 .light-footer {
-    background: #D8A04B!important;
+    background: #777!important;
     color: #222!important;
     font-weight: bolder;
 
@@ -128,7 +128,7 @@
 
 .dev-logo {
     margin-bottom: 2rem;
-    font-weight: bold;
+        font-weight: bold;
 
 }
 
@@ -144,9 +144,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-gap: 20px;
-    justify-content: center;
-    align-items: center;
-
 }
 
 @media(max-width: 425px){

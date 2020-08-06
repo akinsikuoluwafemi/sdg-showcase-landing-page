@@ -9,7 +9,7 @@ export default function Footer() {
     let { darkMode } = useContext(ModeContext)
 
     return (
-        <div className={darkMode ? `px-3 py-5 dark-footer` : `px-3 py-5 light-footer`}>
+        <div className={darkMode ? `px-3 py-3 dark-footer` : `px-3 py-3 light-footer`}>
             <footer className="container">
                 
                 <div className="container-footer">
