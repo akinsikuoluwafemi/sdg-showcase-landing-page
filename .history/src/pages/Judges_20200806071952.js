@@ -75,8 +75,8 @@ export default function Judges() {
 
                         <div className="h2">
                             <ul>
-                                <li>Select an available and convenient date for your pitch</li>
-                                <li>Prepare a slide deck</li>
+                                <li>Select an available and convenient date for your pitch.</li>
+                                <li>Prepare a slide deck.</li>
                                 <li>Ensure they received  comms on the availability of their selected date</li>
                                 <li>Set a reminder at 15 mins before the project pitch was to begin</li>
                                 <li>Talk about who was on the call(i.e PA, 2 judges and BuildforSDG Team)</li>
@@ -96,32 +96,11 @@ export default function Judges() {
                         <h2 className={darkMode ? `color-light h1 font-weight-bold mb-3` : `mb-3 h1 color-dark font-weight-bold`}>Judging Process</h2>
 
                         <div className="h2">
-                            <ol>
-                                <li>Introduction: Ask the Innovator to introduce themselves, team, professional experience</li>
-                                <li>Project details: In this section, Innovator will brief you on their SDG goal selected and the impact their solution hopes to make in their community</li>
-                                <li>Live demo: Innovator will be required to share the link to their live project with you(optional) They should also walk you through the project functionality and use through a shared screen</li>
-                                <li>Feedback: Here you are required to give comments and share feedback on the project. Feel free to share ways the project could be better or what could have been done differently</li>
-                                <li>End session: Be sure to end the session at the exact time allocated to the team which must be between 15-20 minutes</li>     
-
-                            </ol>
-                        </div>
-
-                    </div>
-                </div>
-
-
-                <div className="row my-3">
-
-                    <div className="col-lg-8 col-sm-12">
-                        <h2 className={darkMode ? `color-light h1 font-weight-bold mb-3` : `mb-3 h1 color-dark font-weight-bold`}>Results</h2>
-                        <p className={darkMode ? `color-light text-space h3 font-weight-bold mb-3` : `mb-3 color-dark text-space h3 font-weight-bold`}>After rigorous scoring and judging, The pitch-a-thon session ended with the judges selecting 15 teams which scored the highest in their pitching session </p>
-
-                        <div className="h2">
                             <ul>
-                                <li>Select an available and convenient date for your pitch</li>
-                                <li>Prepare a slide deck</li>
-                                <li>Ensure they received  comms on the availability of their selected date</li>
-                                <li>Set a reminder at 15 mins before the project pitch was to begin</li>
+                                <li>Introduction: Ask the Innovator to introduce themselves, team, professional experience.</li>
+                                <li>Project details: In this section, Innovator will brief you on their SDG goal selected and the impact their solution hopes to make in their community.</li>
+                                <li>Live demo: Innovator will be required to share the link to their live project with you(optional) They should also walk you through the project functionality and use through a shared screen.</li>
+                                <li>Feedback: Here you are required to give comments and share feedback on the project. Feel free to share ways the project could be better or what could have been done differently</li>
                                 <li>Talk about who was on the call(i.e PA, 2 judges and BuildforSDG Team)</li>
                                 <li>Time duration which was 15 minutes</li>
                                 <li>Opportunity for feedback</li>
@@ -131,7 +110,6 @@ export default function Judges() {
 
                     </div>
                 </div>
-
 
 
 

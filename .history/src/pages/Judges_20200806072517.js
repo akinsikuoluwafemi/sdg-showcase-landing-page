@@ -114,7 +114,7 @@ export default function Judges() {
 
                     <div className="col-lg-8 col-sm-12">
                         <h2 className={darkMode ? `color-light h1 font-weight-bold mb-3` : `mb-3 h1 color-dark font-weight-bold`}>Results</h2>
-                        <p className={darkMode ? `color-light text-space h3 font-weight-bold mb-3` : `mb-3 color-dark text-space h3 font-weight-bold`}>After rigorous scoring and judging, The pitch-a-thon session ended with the judges selecting 15 teams which scored the highest in their pitching session </p>
+                        <p className={darkMode ? `color-light text-space h3 font-weight-bold mb-3` : `mb-3 color-dark text-space h3 font-weight-bold`}>After rigorous scoring and judging, The pitch-a-thon session ended with the judges selecting 15 teams which scored the highest in their pitching session.  </p>
 
                         <div className="h2">
                             <ul>

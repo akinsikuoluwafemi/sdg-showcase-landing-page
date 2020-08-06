@@ -110,30 +110,6 @@ export default function Judges() {
                 </div>
 
 
-                <div className="row my-3">
-
-                    <div className="col-lg-8 col-sm-12">
-                        <h2 className={darkMode ? `color-light h1 font-weight-bold mb-3` : `mb-3 h1 color-dark font-weight-bold`}>Results</h2>
-                        <p className={darkMode ? `color-light text-space h3 font-weight-bold mb-3` : `mb-3 color-dark text-space h3 font-weight-bold`}>After rigorous scoring and judging, The pitch-a-thon session ended with the judges selecting 15 teams which scored the highest in their pitching session </p>
-
-                        <div className="h2">
-                            <ul>
-                                <li>Select an available and convenient date for your pitch</li>
-                                <li>Prepare a slide deck</li>
-                                <li>Ensure they received  comms on the availability of their selected date</li>
-                                <li>Set a reminder at 15 mins before the project pitch was to begin</li>
-                                <li>Talk about who was on the call(i.e PA, 2 judges and BuildforSDG Team)</li>
-                                <li>Time duration which was 15 minutes</li>
-                                <li>Opportunity for feedback</li>
-
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
 
 
 

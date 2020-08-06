@@ -110,7 +110,7 @@ const Home = () => {
                         <div className="row twobuttons">
                             <div >
                                 <Link className="projects-btn mr-3" to="/projects">See all projects →</Link>
-                                <Link className="judges-btn" to="/judges">Judging Process →</Link>
+                                <Link className="judges-btn" to="/judges">Judging Process→</Link>
                             
                             </div>
                             
