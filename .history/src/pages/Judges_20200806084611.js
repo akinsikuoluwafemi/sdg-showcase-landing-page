@@ -96,7 +96,7 @@ export default function Judges() {
                         <h2 className={darkMode ? `color-light h1 font-weight-bold mb-3` : `mb-3 h1 color-dark font-weight-bold`}>Judging Process</h2>
 
                         <div className="h2">
-                            <ol className={darkMode ? `color-orange h3 my-4` : `h3 my-4`}>
+                            <ol>
                                 <li>Introduction: Ask the Innovator to introduce themselves, team, professional experience</li>
                                 <li>Project details: In this section, Innovator will brief you on their SDG goal selected and the impact their solution hopes to make in their community</li>
                                 <li>Live demo: Innovator will be required to share the link to their live project with you(optional) They should also walk you through the project functionality and use through a shared screen</li>
@@ -119,7 +119,7 @@ export default function Judges() {
                         <div className="h2">
                             <p className={darkMode ? `color-light text-space h3  mb-3` : `mb-3 color-dark text-space h3 `}>The 15 teams that qualified for the next phase are </p>
                             
-                            <ul className={darkMode ? `color-orange h3 my-4` : `h3 my-4`}>
+                            <ul>
                                 <li>Team 247 (Donate A seed)</li>
                                 <li>Team-236 (Swiftana)</li>
                                 <li>Team-273 (Farmer's Expand)</li>

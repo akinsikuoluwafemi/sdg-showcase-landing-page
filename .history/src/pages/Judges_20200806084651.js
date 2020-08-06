@@ -119,7 +119,7 @@ export default function Judges() {
                         <div className="h2">
                             <p className={darkMode ? `color-light text-space h3  mb-3` : `mb-3 color-dark text-space h3 `}>The 15 teams that qualified for the next phase are </p>
                             
-                            <ul className={darkMode ? `color-orange h3 my-4` : `h3 my-4`}>
+                            <ul>
                                 <li>Team 247 (Donate A seed)</li>
                                 <li>Team-236 (Swiftana)</li>
                                 <li>Team-273 (Farmer's Expand)</li>
