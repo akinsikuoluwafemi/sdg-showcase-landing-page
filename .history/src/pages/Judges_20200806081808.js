@@ -131,7 +131,7 @@ export default function Judges() {
                                 <li>Team-183 (Chicken-Farm-Ke)</li>
                                 <li>Team-132 (goOrganic)</li>
                                 <li>Team-075 (Emergency Response System)</li>
-                                <li>Team-055 (MindCare)</li>
+                                <li>Team-067 (MindCare)</li>
                                 <li>Team-003 (RoadMaster)</li>
                                 <li>Team-133 (Food Network)</li>
 

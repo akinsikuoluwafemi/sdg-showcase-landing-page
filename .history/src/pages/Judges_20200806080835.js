@@ -125,18 +125,8 @@ export default function Judges() {
                                 <li>Team-273 (Farmer's Expand)</li>
                                 <li>Team-085 (VoiceOut)</li>
                                 <li>Team-203 (TranSafe)</li>
-                                <li>Team-106 (DevData)</li>
-                                <li>Team-067 (SmeVest)</li>
-                                <li>Team-052 (Response 52)</li>
-                                <li>Team-183 (Chicken-Farm-Ke)</li>
-                                <li>Team-132 (goOrganic)</li>
-                                <li>Team-075 (Emergency Response System)</li>
-                                <li>Team-055 (MindCare)</li>
-                                <li>Team-003 (RoadMaster)</li>
-                                <li>Team-133 (Food Network)</li>
-
-
-                                
+                                <li>Team-106 DevData</li>
+                                <li>Opportunity for feedback</li>
 
                             </ul>
                         </div>

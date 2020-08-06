@@ -120,23 +120,13 @@ export default function Judges() {
                             <p className={darkMode ? `color-light text-space h3  mb-3` : `mb-3 color-dark text-space h3 `}>The 15 teams that qualified for the next phase are </p>
                             
                             <ul>
-                                <li>Team 247 (Donate A seed)</li>
-                                <li>Team-236 (Swiftana)</li>
-                                <li>Team-273 (Farmer's Expand)</li>
-                                <li>Team-085 (VoiceOut)</li>
-                                <li>Team-203 (TranSafe)</li>
-                                <li>Team-106 (DevData)</li>
-                                <li>Team-067 (SmeVest)</li>
-                                <li>Team-052 (Response 52)</li>
-                                <li>Team-183 (Chicken-Farm-Ke)</li>
-                                <li>Team-132 (goOrganic)</li>
-                                <li>Team-075 (Emergency Response System)</li>
-                                <li>Team-055 (MindCare)</li>
-                                <li>Team-003 (RoadMaster)</li>
-                                <li>Team-133 (Food Network)</li>
-
-
-                                
+                                <li>Select an available and convenient date for your pitch</li>
+                                <li>Prepare a slide deck</li>
+                                <li>Ensure they received  comms on the availability of their selected date</li>
+                                <li>Set a reminder at 15 mins before the project pitch was to begin</li>
+                                <li>Talk about who was on the call(i.e PA, 2 judges and BuildforSDG Team)</li>
+                                <li>Time duration which was 15 minutes</li>
+                                <li>Opportunity for feedback</li>
 
                             </ul>
                         </div>
