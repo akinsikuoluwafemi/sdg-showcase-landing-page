@@ -1,4 +1,4 @@
-gitr add {
+gitr {
   "name": "showcase-page",
   "version": "0.1.0",
   "lockfileVersion": 1,

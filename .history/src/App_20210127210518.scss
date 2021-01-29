@@ -8,13 +8,12 @@
 
 
 .bg-header {
-
-    background-image: url('./images/headerimg.png');
+    background-image: url('https://res.cloudinary.com/dt69gb9me/image/upload/v1611777453/banner_tqyouu.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
     height: 0;
-    padding-top: 44.27%;
+    padding-top: 33.33%;
 }
 
 .partners-container {
@@ -455,6 +454,8 @@
     grid-template-columns: repeat(2,1fr);
     
     grid-gap: 2rem;
+    justify-content: center;
+    // align-items: center;
 }
 
 @media(max-width: 768px){
@@ -908,7 +909,13 @@
 @media(max-width: 320px){
     .header-list {
         padding: 0;
-        margin: 
+        margin: 0;
+    }
+}
+
+@media(max-width:320px){
+    .ml {
+        margin-left: -1.2rem;
     }
 }
 
