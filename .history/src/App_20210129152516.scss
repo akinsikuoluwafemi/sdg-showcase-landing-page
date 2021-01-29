@@ -426,14 +426,15 @@
     // box-shadow: rgb(37, 36, 41) 0px 0px 0px 3px, rgb(255, 15, 101) 0px 0px 0px 6px;
 
     border: none;
-    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
 
     -webkit-transition: transform .3s ease-in-out;
     display: grid;
     justify-items: center;
 }
 
-
+.povactive {
+}
 
 .health:hover {
     z-index: 2!important;
@@ -467,7 +468,9 @@
     
 }
 
-
+.project-card-container > * {
+    // margin: 1.1rem;
+}
 
 .project-card {
     background: #F9FAFC;
@@ -746,7 +749,9 @@
 
 
 
-
+.close {
+   
+}
 
 .info {
     color: #fff;
